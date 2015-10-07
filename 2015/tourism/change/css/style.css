@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#map {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    position: absolute;
+    width: 910px;
+    height: 770px;
+    font-family: "Textbook-light", Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+#map {
+    width: 910px;
+    height: 700px;
+}
+
+.header {
+    font: 1.25em "Textbook-bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    padding-bottom: 4px;
+}
+
+.subheader {
+    color: #555150;
+    font-size: 1.35em;
+    line-height: 1em;
+    padding-bottom: 10px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #555150;
+    text-transform: uppercase;
+}
+
+.legend {
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    color: #555150;
+    background-color: rgba(255, 255, 255, .8);
+    font-size: 1.1em;
+}
+
+.legend td {
+    padding: 1.75px;
+}
+
+#colors {
+    width: 12.5px;
+    margin-right: 5px;
+}
+
+.decrease_big {
+    background-color: #f36b28;
+}
+
+.decrease_small {
+    background-color: #f9a261;
+}
+
+.increase_small {
+    background-color: #b9d873;
+}
+
+.increase_big {
+    background-color: #71c529;
+}
+
+.same {
+    background-color: #cacac8;
+}

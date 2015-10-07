@@ -1,0 +1,2402 @@
+[ {
+    "name": "Абхазия",
+    "lat": 42.9892,
+    "lon": 40.9835,
+    "weight": 1.95,
+    "level1": [ {
+        "name": "Абхазия",
+        "weight": .85,
+        "level2": null
+    }, {
+        "name": "Гагра",
+        "weight": .48,
+        "level2": null
+    }, {
+        "name": "Гудаута",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Новый Афон",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Пицунда",
+        "weight": .35,
+        "level2": null
+    }, {
+        "name": "Сухум",
+        "weight": .13,
+        "level2": null
+    } ]
+}, {
+    "name": "Австралия",
+    "lat": -25.5788,
+    "lon": 134.3596,
+    "weight": .14,
+    "level1": null
+}, {
+    "name": "Австрия",
+    "lat": 47.5871,
+    "lon": 14.1413,
+    "weight": .48,
+    "level1": [ {
+        "name": "Австрия",
+        "weight": .28,
+        "level2": null
+    }, {
+        "name": "Вена",
+        "weight": .2,
+        "level2": null
+    } ]
+}, {
+    "name": "Азербайджан",
+    "lat": 40.36,
+    "lon": 47.6515,
+    "weight": .16,
+    "level1": [ {
+        "name": "Азербайджан",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Баку",
+        "weight": .08,
+        "level2": null
+    } ]
+}, {
+    "name": "Албания",
+    "lat": 41.1394,
+    "lon": 20.0646,
+    "weight": .03,
+    "level1": null
+}, {
+    "name": "Андорра",
+    "lat": 42.5453,
+    "lon": 1.5763,
+    "weight": .04,
+    "level1": null
+}, {
+    "name": "Аргентина",
+    "lat": -35.1949,
+    "lon": -65.102,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Армения",
+    "lat": 40.2927,
+    "lon": 44.9395,
+    "weight": .19,
+    "level1": [ {
+        "name": "Армения",
+        "weight": .11,
+        "level2": null
+    }, {
+        "name": "Ереван",
+        "weight": .08,
+        "level2": null
+    } ]
+}, {
+    "name": "Беларусь",
+    "lat": 53.5312,
+    "lon": 28.031,
+    "weight": .99,
+    "level1": [ {
+        "name": "Беларусь",
+        "weight": .36,
+        "level2": null
+    }, {
+        "name": "Брестская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Брестская область",
+            "weight": .04
+        }, {
+            "name": "Брест",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Витебск",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Витебская область",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Гомельская область",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Гродненская область",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Минская область",
+        "weight": .36,
+        "level2": [ {
+            "name": "Минская область",
+            "weight": .11
+        }, {
+            "name": "Минск",
+            "weight": .25
+        } ]
+    } ]
+}, {
+    "name": "Бельгия",
+    "lat": 50.6412,
+    "lon": 4.6606,
+    "weight": .16,
+    "level1": [ {
+        "name": "Бельгия",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Брюссель",
+        "weight": .06,
+        "level2": null
+    } ]
+}, {
+    "name": "Болгария",
+    "lat": 42.7574,
+    "lon": 25.2387,
+    "weight": 1.68,
+    "level1": [ {
+        "name": "Болгария",
+        "weight": 1.39,
+        "level2": null
+    }, {
+        "name": "Бургас",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Золотые Пески",
+        "weight": .13,
+        "level2": null
+    }, {
+        "name": "Несебыр",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Созополь",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "София",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Бразилия",
+    "lat": -10.7765,
+    "lon": -53.069,
+    "weight": .17,
+    "level1": [ {
+        "name": "Бразилия",
+        "weight": .13,
+        "level2": null
+    }, {
+        "name": "Рио-де-Жанейро",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Великобритания",
+    "lat": 53.9446,
+    "lon": -2.5507,
+    "weight": .73,
+    "level1": [ {
+        "name": "Великобритания",
+        "weight": .24,
+        "level2": null
+    }, {
+        "name": "Англия",
+        "weight": .44,
+        "level2": [ {
+            "name": "Англия",
+            "weight": .08
+        }, {
+            "name": "Лондон",
+            "weight": .36
+        } ]
+    }, {
+        "name": "Шотландия",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Венгрия",
+    "lat": 47.1652,
+    "lon": 19.4123,
+    "weight": .47,
+    "level1": [ {
+        "name": "Венгрия",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Будапешт",
+        "weight": .27,
+        "level2": null
+    }, {
+        "name": "Хевиз",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Вьетнам",
+    "lat": 15.377,
+    "lon": 109.1423,
+    "weight": 1.36,
+    "level1": [ {
+        "name": "Вьетнам",
+        "weight": .56,
+        "level2": null
+    }, {
+        "name": "Нячанг",
+        "weight": .52,
+        "level2": null
+    }, {
+        "name": "Фантхьет",
+        "weight": .19,
+        "level2": null
+    }, {
+        "name": "Ханой",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Хошимин",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Германия",
+    "lat": 51.1215,
+    "lon": 10.4008,
+    "weight": 1.2,
+    "level1": [ {
+        "name": "Германия",
+        "weight": .58,
+        "level2": null
+    }, {
+        "name": "Бавария",
+        "weight": .21,
+        "level2": [ {
+            "name": "Бавария",
+            "weight": .04
+        }, {
+            "name": "Мюнхен",
+            "weight": .17
+        } ]
+    }, {
+        "name": "Берлин",
+        "weight": .23,
+        "level2": null
+    }, {
+        "name": "Гамбург",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Дрезден",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Дюссельдорф",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Кёльн",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Франкфурт-на-Майне",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Греция",
+    "lat": 39.3475,
+    "lon": 22.5714,
+    "weight": 3.75,
+    "level1": [ {
+        "name": "Греция",
+        "weight": .82,
+        "level2": null
+    }, {
+        "name": "Афины",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Ионические острова",
+        "weight": .31,
+        "level2": [ {
+            "name": "Ионические острова",
+            "weight": .01
+        }, {
+            "name": "Закинф",
+            "weight": .09
+        }, {
+            "name": "Корфу",
+            "weight": .21
+        } ]
+    }, {
+        "name": "Кос",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Крит",
+        "weight": 1.21,
+        "level2": null
+    }, {
+        "name": "Пелопоннес",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Родос",
+        "weight": .66,
+        "level2": null
+    }, {
+        "name": "Салоники",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Санторини",
+        "weight": .06,
+        "level2": null
+    }, {
+        "name": "Халкидики",
+        "weight": .36,
+        "level2": null
+    } ]
+}, {
+    "name": "Грузия",
+    "lat": 41.6648,
+    "lon": 43.9044,
+    "weight": .28,
+    "level1": [ {
+        "name": "Грузия",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Батуми",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Тбилиси",
+        "weight": .08,
+        "level2": null
+    } ]
+}, {
+    "name": "Дания",
+    "lat": 56.2623,
+    "lon": 9.3364,
+    "weight": .1,
+    "level1": [ {
+        "name": "Дания",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Копенгаген",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Доминиканская Республика",
+    "lat": 18.8973,
+    "lon": -70.5,
+    "weight": .4,
+    "level1": [ {
+        "name": "Доминиканская Республика",
+        "weight": .27,
+        "level2": null
+    }, {
+        "name": "Пунта-Кана",
+        "weight": .13,
+        "level2": null
+    } ]
+}, {
+    "name": "Египет",
+    "lat": 26.5054,
+    "lon": 29.8761,
+    "weight": 7.53,
+    "level1": [ {
+        "name": "Египет",
+        "weight": 1.38,
+        "level2": null
+    }, {
+        "name": "Дахаб",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Макади-Бэй",
+        "weight": .46,
+        "level2": null
+    }, {
+        "name": "Марса-Алам",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Сафага",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Сахль-Хашиш",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Сома-бэй",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Таба",
+        "weight": .06,
+        "level2": null
+    }, {
+        "name": "Хургада",
+        "weight": 2.47,
+        "level2": null
+    }, {
+        "name": "Шарм-эль-Шейх",
+        "weight": 2.74,
+        "level2": null
+    }, {
+        "name": "Эль-Гуна",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Израиль",
+    "lat": 31.552,
+    "lon": 35.0611,
+    "weight": .62,
+    "level1": [ {
+        "name": "Израиль",
+        "weight": .37,
+        "level2": null
+    }, {
+        "name": "Иерусалим",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Нетания",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Тель-Авив",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Эйлат",
+        "weight": .07,
+        "level2": null
+    } ]
+}, {
+    "name": "Индия",
+    "lat": 22.4844,
+    "lon": 79.7141,
+    "weight": .59,
+    "level1": [ {
+        "name": "Индия",
+        "weight": .28,
+        "level2": null
+    }, {
+        "name": "Гоа",
+        "weight": .31,
+        "level2": null
+    } ]
+}, {
+    "name": "Индонезия",
+    "lat": -.2094,
+    "lon": 114.0046,
+    "weight": .42,
+    "level1": [ {
+        "name": "Индонезия",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Бали",
+        "weight": .26,
+        "level2": null
+    } ]
+}, {
+    "name": "Иордания",
+    "lat": 31.2481,
+    "lon": 36.7877,
+    "weight": .07,
+    "level1": null
+}, {
+    "name": "Ирландия",
+    "lat": 53.1851,
+    "lon": -8.1468,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Исландия",
+    "lat": 64.9836,
+    "lon": -18.5771,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Испания",
+    "lat": 40.3877,
+    "lon": -3.5574,
+    "weight": 3.41,
+    "level1": [ {
+        "name": "Испания",
+        "weight": 1.36,
+        "level2": null
+    }, {
+        "name": "Балеарские острова",
+        "weight": .31,
+        "level2": [ {
+            "name": "Балеарские острова",
+            "weight": .01
+        }, {
+            "name": "Ибица",
+            "weight": .04
+        }, {
+            "name": "Майорка",
+            "weight": .26
+        } ]
+    }, {
+        "name": "Барселона",
+        "weight": .47,
+        "level2": null
+    }, {
+        "name": "Канарские острова",
+        "weight": .34,
+        "level2": [ {
+            "name": "Канарские острова",
+            "weight": .09
+        }, {
+            "name": "Тенерифе",
+            "weight": .25
+        } ]
+    }, {
+        "name": "Коста-Бланка",
+        "weight": .16,
+        "level2": [ {
+            "name": "Коста-Бланка",
+            "weight": .06
+        }, {
+            "name": "Аликанте",
+            "weight": .04
+        }, {
+            "name": "Валенсия",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Коста-Брава",
+        "weight": .09,
+        "level2": [ {
+            "name": "Коста-Брава",
+            "weight": .04
+        }, {
+            "name": "Льорет-де-Мар",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Коста-Дорада",
+        "weight": .33,
+        "level2": [ {
+            "name": "Коста-Дорада",
+            "weight": .25
+        }, {
+            "name": "Салоу",
+            "weight": .08
+        } ]
+    }, {
+        "name": "Коста-дель-Маресме",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Коста-дель-Соль",
+        "weight": .07,
+        "level2": [ {
+            "name": "Коста-дель-Соль",
+            "weight": .03
+        }, {
+            "name": "Малага",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Мадрид",
+        "weight": .14,
+        "level2": null
+    }, {
+        "name": "Севилья",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Италия",
+    "lat": 43.5292,
+    "lon": 12.162,
+    "weight": 3.11,
+    "level1": [ {
+        "name": "Италия",
+        "weight": 1.12,
+        "level2": null
+    }, {
+        "name": "Апулия",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Венето",
+        "weight": .26,
+        "level2": [ {
+            "name": "Венето",
+            "weight": .05
+        }, {
+            "name": "Венеция",
+            "weight": .16
+        }, {
+            "name": "Верона",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Искья",
+        "weight": .06,
+        "level2": null
+    }, {
+        "name": "Кампания",
+        "weight": .07,
+        "level2": [ {
+            "name": "Кампания",
+            "weight": .03
+        }, {
+            "name": "Неаполь",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Лацио",
+        "weight": .07,
+        "level2": [ {
+            "name": "Лацио",
+            "weight": .03
+        }, {
+            "name": "Неттуно",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Лигурия",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Ломбардия",
+        "weight": .3,
+        "level2": [ {
+            "name": "Ломбардия",
+            "weight": .02
+        }, {
+            "name": "Милан",
+            "weight": .28
+        } ]
+    }, {
+        "name": "Рим",
+        "weight": .44,
+        "level2": null
+    }, {
+        "name": "Сардиния",
+        "weight": .11,
+        "level2": null
+    }, {
+        "name": "Сицилия",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Тоскана",
+        "weight": .17,
+        "level2": [ {
+            "name": "Тоскана",
+            "weight": .08
+        }, {
+            "name": "Флоренция",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Эмилия-Романья",
+        "weight": .24,
+        "level2": [ {
+            "name": "Эмилия-Романья",
+            "weight": .12
+        }, {
+            "name": "Римини",
+            "weight": .12
+        } ]
+    } ]
+}, {
+    "name": "Казахстан",
+    "lat": 48.1362,
+    "lon": 67.1535,
+    "weight": .68,
+    "level1": [ {
+        "name": "Казахстан",
+        "weight": .23,
+        "level2": null
+    }, {
+        "name": "Алматы",
+        "weight": .28,
+        "level2": null
+    }, {
+        "name": "Астана",
+        "weight": .13,
+        "level2": null
+    }, {
+        "name": "Караганда",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Камбоджа",
+    "lat": 12.7109,
+    "lon": 104.9169,
+    "weight": .08,
+    "level1": null
+}, {
+    "name": "Канада",
+    "lat": 62.5367,
+    "lon": -96.3924,
+    "weight": .1,
+    "level1": null
+}, {
+    "name": "Кения",
+    "lat": .606,
+    "lon": 37.817,
+    "weight": .04,
+    "level1": null
+}, {
+    "name": "Кипр",
+    "lat": 35.2804,
+    "lon": 33.6017,
+    "weight": 2.18,
+    "level1": [ {
+        "name": "Кипр",
+        "weight": .74,
+        "level2": null
+    }, {
+        "name": "Айя-Напа",
+        "weight": .55,
+        "level2": null
+    }, {
+        "name": "Ларнака",
+        "weight": .08,
+        "level2": null
+    }, {
+        "name": "Лимасол",
+        "weight": .19,
+        "level2": null
+    }, {
+        "name": "Пафос",
+        "weight": .35,
+        "level2": null
+    }, {
+        "name": "Протарас",
+        "weight": .27,
+        "level2": null
+    } ]
+}, {
+    "name": "Киргизия",
+    "lat": 41.4644,
+    "lon": 74.5552,
+    "weight": .11,
+    "level1": null
+}, {
+    "name": "Китай",
+    "lat": 36.6254,
+    "lon": 103.9034,
+    "weight": .91,
+    "level1": [ {
+        "name": "Китай",
+        "weight": .43,
+        "level2": null
+    }, {
+        "name": "Гонконг",
+        "weight": .11,
+        "level2": null
+    }, {
+        "name": "Гуанчжоу",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Пекин",
+        "weight": .12,
+        "level2": null
+    }, {
+        "name": "Хайнань",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Шанхай",
+        "weight": .08,
+        "level2": null
+    } ]
+}, {
+    "name": "Корея",
+    "lat": 36.4512,
+    "lon": 127.8611,
+    "weight": .19,
+    "level1": [ {
+        "name": "Корея",
+        "weight": .12,
+        "level2": null
+    }, {
+        "name": "Сеул",
+        "weight": .07,
+        "level2": null
+    } ]
+}, {
+    "name": "Коста-Рика",
+    "lat": 9.9748,
+    "lon": -84.1939,
+    "weight": .03,
+    "level1": null
+}, {
+    "name": "Куба",
+    "lat": 21.6105,
+    "lon": -78.9603,
+    "weight": .51,
+    "level1": [ {
+        "name": "Куба",
+        "weight": .38,
+        "level2": null
+    }, {
+        "name": "Варадеро",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Гавана",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Латвия",
+    "lat": 56.8539,
+    "lon": 24.9276,
+    "weight": .28,
+    "level1": [ {
+        "name": "Латвия",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Рига",
+        "weight": .13,
+        "level2": null
+    }, {
+        "name": "Юрмала",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Литва",
+    "lat": 55.3373,
+    "lon": 23.8836,
+    "weight": .19,
+    "level1": [ {
+        "name": "Литва",
+        "weight": .12,
+        "level2": null
+    }, {
+        "name": "Вильнюс",
+        "weight": .07,
+        "level2": null
+    } ]
+}, {
+    "name": "Маврикий",
+    "lat": -20.2858,
+    "lon": 57.568,
+    "weight": .1,
+    "level1": null
+}, {
+    "name": "Македония",
+    "lat": 41.6005,
+    "lon": 21.7009,
+    "weight": .03,
+    "level1": null
+}, {
+    "name": "Малайзия",
+    "lat": 3.6061,
+    "lon": 114.7126,
+    "weight": .12,
+    "level1": [ {
+        "name": "Малайзия",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Куала-Лумпур",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Мальдивы",
+    "lat": 1.9123,
+    "lon": 73.5401,
+    "weight": .65,
+    "level1": [ {
+        "name": "Мальдивы",
+        "weight": .59,
+        "level2": null
+    }, {
+        "name": "Мале",
+        "weight": .06,
+        "level2": null
+    } ]
+}, {
+    "name": "Мальта",
+    "lat": 35.8906,
+    "lon": 14.4395,
+    "weight": .16,
+    "level1": null
+}, {
+    "name": "Марокко",
+    "lat": 29.13,
+    "lon": -8.8709,
+    "weight": .21,
+    "level1": [ {
+        "name": "Марокко",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Агадир",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Мексика",
+    "lat": 23.9405,
+    "lon": -102.5263,
+    "weight": .25,
+    "level1": [ {
+        "name": "Мексика",
+        "weight": .19,
+        "level2": null
+    }, {
+        "name": "Канкун",
+        "weight": .06,
+        "level2": null
+    } ]
+}, {
+    "name": "Молдавия",
+    "lat": 47.2024,
+    "lon": 28.4661,
+    "weight": .07,
+    "level1": null
+}, {
+    "name": "Монако",
+    "lat": 43.7329,
+    "lon": 7.4175,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Монголия",
+    "lat": 46.8347,
+    "lon": 103.0676,
+    "weight": .03,
+    "level1": null
+}, {
+    "name": "Непал",
+    "lat": 28.2591,
+    "lon": 83.9442,
+    "weight": .06,
+    "level1": null
+}, {
+    "name": "Нидерланды",
+    "lat": 52.2458,
+    "lon": 5.5652,
+    "weight": .31,
+    "level1": [ {
+        "name": "Нидерланды",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Амстердам",
+        "weight": .16,
+        "level2": null
+    } ]
+}, {
+    "name": "Новая Зеландия",
+    "lat": -43.9482,
+    "lon": 170.5025,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Норвегия",
+    "lat": 64.239,
+    "lon": 13.9506,
+    "weight": .18,
+    "level1": [ {
+        "name": "Норвегия",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Осло",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "ОАЭ",
+    "lat": 23.9073,
+    "lon": 54.3341,
+    "weight": 1.22,
+    "level1": [ {
+        "name": "ОАЭ",
+        "weight": .33,
+        "level2": null
+    }, {
+        "name": "Абу-Даби",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Аджман",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Дубай",
+        "weight": .61,
+        "level2": null
+    }, {
+        "name": "Рас-эль-Хайма",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Шарджа",
+        "weight": .08,
+        "level2": null
+    } ]
+}, {
+    "name": "Перу",
+    "lat": -9.1713,
+    "lon": -74.3568,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Польша",
+    "lat": 52.129,
+    "lon": 19.3937,
+    "weight": .35,
+    "level1": [ {
+        "name": "Польша",
+        "weight": .24,
+        "level2": null
+    }, {
+        "name": "Варшава",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Краков",
+        "weight": .06,
+        "level2": null
+    } ]
+}, {
+    "name": "Португалия",
+    "lat": 39.68,
+    "lon": -7.9687,
+    "weight": .41,
+    "level1": [ {
+        "name": "Португалия",
+        "weight": .21,
+        "level2": null
+    }, {
+        "name": "Алгарве",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Лиссабон",
+        "weight": .13,
+        "level2": null
+    }, {
+        "name": "Мадейра",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Россия",
+    "lat": 61.6987,
+    "lon": 99.5054,
+    "weight": 34.99,
+    "level1": [ {
+        "name": "Россия",
+        "weight": 2.48,
+        "level2": null
+    }, {
+        "name": "Адыгея",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Республика Алтай",
+        "weight": .25,
+        "level2": [ {
+            "name": "Республика Алтай",
+            "weight": .1
+        }, {
+            "name": "Белокуриха",
+            "weight": .15
+        } ]
+    }, {
+        "name": "Алтайский край",
+        "weight": .05,
+        "level2": [ {
+            "name": "Барнаул",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Архангельская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Архангельская область",
+            "weight": .05
+        }, {
+            "name": "Архангельск",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Астраханская область",
+        "weight": .08,
+        "level2": [ {
+            "name": "Астрахань",
+            "weight": .08
+        } ]
+    }, {
+        "name": "Байкал",
+        "weight": .12,
+        "level2": null
+    }, {
+        "name": "Башкортостан",
+        "weight": .25,
+        "level2": [ {
+            "name": "Башкортостан",
+            "weight": .11
+        }, {
+            "name": "Уфа",
+            "weight": .14
+        } ]
+    }, {
+        "name": "Белгородская область",
+        "weight": .08,
+        "level2": [ {
+            "name": "Белгородская область",
+            "weight": .02
+        }, {
+            "name": "Белгород",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Брянская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Брянская область",
+            "weight": .02
+        }, {
+            "name": "Брянск",
+            "weight": .08
+        } ]
+    }, {
+        "name": "Бурятия",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Владимирская область",
+        "weight": .31,
+        "level2": [ {
+            "name": "Владимирская область",
+            "weight": .06
+        }, {
+            "name": "Владимир",
+            "weight": .1
+        }, {
+            "name": "Муром",
+            "weight": .03
+        }, {
+            "name": "Суздаль",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Волгоградская область",
+        "weight": .25,
+        "level2": [ {
+            "name": "Волгоградская область",
+            "weight": .04
+        }, {
+            "name": "Волгоград",
+            "weight": .21
+        } ]
+    }, {
+        "name": "Вологодская область",
+        "weight": .14,
+        "level2": [ {
+            "name": "Вологодская область",
+            "weight": .07
+        }, {
+            "name": "Вологда",
+            "weight": .07
+        } ]
+    }, {
+        "name": "Воронежская область",
+        "weight": .16,
+        "level2": [ {
+            "name": "Воронежская область",
+            "weight": .04
+        }, {
+            "name": "Воронеж",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Дагестан",
+        "weight": .05,
+        "level2": [ {
+            "name": "Дагестан",
+            "weight": .01
+        }, {
+            "name": "Махачкала",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Ивановская область",
+        "weight": .22,
+        "level2": [ {
+            "name": "Ивановская область",
+            "weight": .15
+        }, {
+            "name": "Иваново",
+            "weight": .07
+        } ]
+    }, {
+        "name": "Иркутская область",
+        "weight": .12,
+        "level2": [ {
+            "name": "Иркутская область",
+            "weight": .03
+        }, {
+            "name": "Иркутск",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Кабардино-Балкария",
+        "weight": .06,
+        "level2": [ {
+            "name": "Кабардино-Балкария",
+            "weight": .01
+        }, {
+            "name": "Нальчик",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Калининградская область",
+        "weight": .36,
+        "level2": [ {
+            "name": "Калининградская область",
+            "weight": .07
+        }, {
+            "name": "Калининград",
+            "weight": .23
+        }, {
+            "name": "Светлогорск",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Калужская область",
+        "weight": .2,
+        "level2": [ {
+            "name": "Калужская область",
+            "weight": .06
+        }, {
+            "name": "Калуга",
+            "weight": .07
+        }, {
+            "name": "Обнинск",
+            "weight": .03
+        }, {
+            "name": "Таруса",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Камчатский край",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Карачаево-Черкесия",
+        "weight": .07,
+        "level2": [ {
+            "name": "Карачаево-Черкесия",
+            "weight": .02
+        }, {
+            "name": "Домбай",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Карелия",
+        "weight": .33,
+        "level2": [ {
+            "name": "Карелия",
+            "weight": .22
+        }, {
+            "name": "Петрозаводск",
+            "weight": .07
+        }, {
+            "name": "Сортавала",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Кемеровская область",
+        "weight": .14,
+        "level2": [ {
+            "name": "Кемеровская область",
+            "weight": .09
+        }, {
+            "name": "Кемерово",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Кировская область",
+        "weight": .08,
+        "level2": [ {
+            "name": "Кировская область",
+            "weight": .02
+        }, {
+            "name": "Киров",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Коми",
+        "weight": .06,
+        "level2": [ {
+            "name": "Коми",
+            "weight": .03
+        }, {
+            "name": "Сыктывкар",
+            "weight": .03
+        } ]
+    }, {
+        "name": "Костромская область",
+        "weight": .15,
+        "level2": [ {
+            "name": "Костромская область",
+            "weight": .03
+        }, {
+            "name": "Кострома",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Краснодарский край",
+        "weight": 9.07,
+        "level2": [ {
+            "name": "Краснодарский край",
+            "weight": .25
+        }, {
+            "name": "Анапа",
+            "weight": 1.91
+        }, {
+            "name": "Геленджик",
+            "weight": 1.27
+        }, {
+            "name": "Должанская",
+            "weight": .06
+        }, {
+            "name": "Ейск",
+            "weight": .23
+        }, {
+            "name": "Краснодар",
+            "weight": .31
+        }, {
+            "name": "Новороссийск",
+            "weight": .13
+        }, {
+            "name": "Сочи",
+            "weight": 4.19
+        }, {
+            "name": "Темрюкский район",
+            "weight": .19
+        }, {
+            "name": "Туапсе",
+            "weight": .53
+        } ]
+    }, {
+        "name": "Красноярский край",
+        "weight": .15,
+        "level2": [ {
+            "name": "Красноярский край",
+            "weight": .03
+        }, {
+            "name": "Красноярск",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Крым",
+        "weight": 6.48,
+        "level2": [ {
+            "name": "Крым",
+            "weight": 3.44
+        }, {
+            "name": "Алушта",
+            "weight": .47
+        }, {
+            "name": "Евпатория",
+            "weight": .42
+        }, {
+            "name": "Керчь",
+            "weight": .16
+        }, {
+            "name": "Коктебель",
+            "weight": .1
+        }, {
+            "name": "Кореиз",
+            "weight": .05
+        }, {
+            "name": "Саки",
+            "weight": .12
+        }, {
+            "name": "Севастополь",
+            "weight": .26
+        }, {
+            "name": "Симферополь",
+            "weight": .14
+        }, {
+            "name": "Судак",
+            "weight": .25
+        }, {
+            "name": "Феодосия",
+            "weight": .18
+        }, {
+            "name": "Ялта",
+            "weight": .89
+        } ]
+    }, {
+        "name": "Курская область",
+        "weight": .07,
+        "level2": [ {
+            "name": "Курская область",
+            "weight": .01
+        }, {
+            "name": "Курск",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Ленинградская область",
+        "weight": .36,
+        "level2": [ {
+            "name": "Ленинградская область",
+            "weight": .28
+        }, {
+            "name": "Выборг",
+            "weight": .08
+        } ]
+    }, {
+        "name": "Липецкая область",
+        "weight": .09,
+        "level2": [ {
+            "name": "Липецкая область",
+            "weight": .05
+        }, {
+            "name": "Липецк",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Марий Эл",
+        "weight": .06,
+        "level2": [ {
+            "name": "Йошкар-Ола",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Мордовия",
+        "weight": .04,
+        "level2": [ {
+            "name": "Саранск",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Москва",
+        "weight": 2.57,
+        "level2": null
+    }, {
+        "name": "Московская область",
+        "weight": 1.73,
+        "level2": [ {
+            "name": "Московская область",
+            "weight": 1.49
+        }, {
+            "name": "Дмитровский район",
+            "weight": .04
+        }, {
+            "name": "Коломна",
+            "weight": .09
+        }, {
+            "name": "Кубинка",
+            "weight": .03
+        }, {
+            "name": "Сергиев Посад",
+            "weight": .08
+        } ]
+    }, {
+        "name": "Мурманская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Мурманская область",
+            "weight": .01
+        }, {
+            "name": "Кировск",
+            "weight": .03
+        }, {
+            "name": "Мурманск",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Нижегородская область",
+        "weight": .46,
+        "level2": [ {
+            "name": "Нижегородская область",
+            "weight": .11
+        }, {
+            "name": "Дивеево",
+            "weight": .03
+        }, {
+            "name": "Нижний Новгород",
+            "weight": .32
+        } ]
+    }, {
+        "name": "Новгородская область",
+        "weight": .13,
+        "level2": [ {
+            "name": "Новгородская область",
+            "weight": .07
+        }, {
+            "name": "Валдай",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Новосибирская область",
+        "weight": .42,
+        "level2": [ {
+            "name": "Новосибирская область",
+            "weight": .02
+        }, {
+            "name": "Бердск",
+            "weight": .04
+        }, {
+            "name": "Новосибирск",
+            "weight": .36
+        } ]
+    }, {
+        "name": "Омская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Омская область",
+            "weight": .03
+        }, {
+            "name": "Омск",
+            "weight": .07
+        } ]
+    }, {
+        "name": "Оренбургская область",
+        "weight": .12,
+        "level2": [ {
+            "name": "Оренбургская область",
+            "weight": .02
+        }, {
+            "name": "Оренбург",
+            "weight": .07
+        }, {
+            "name": "Соль-Илецкий район",
+            "weight": .03
+        } ]
+    }, {
+        "name": "Пензенская область",
+        "weight": .1,
+        "level2": [ {
+            "name": "Пензенская область",
+            "weight": .01
+        }, {
+            "name": "Пенза",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Пермский край",
+        "weight": .18,
+        "level2": [ {
+            "name": "Пермский край",
+            "weight": .06
+        }, {
+            "name": "Пермь",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Приморский край",
+        "weight": .23,
+        "level2": [ {
+            "name": "Приморский край",
+            "weight": .05
+        }, {
+            "name": "Владивосток",
+            "weight": .18
+        } ]
+    }, {
+        "name": "Псковская область",
+        "weight": .12,
+        "level2": [ {
+            "name": "Псковская область",
+            "weight": .05
+        }, {
+            "name": "Псков",
+            "weight": .07
+        } ]
+    }, {
+        "name": "Ростовская область",
+        "weight": .35,
+        "level2": [ {
+            "name": "Ростовская область",
+            "weight": .07
+        }, {
+            "name": "Ростов-на-Дону",
+            "weight": .23
+        }, {
+            "name": "Таганрог",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Рязанская область",
+        "weight": .12,
+        "level2": [ {
+            "name": "Рязанская область",
+            "weight": .03
+        }, {
+            "name": "Рязань",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Самарская область",
+        "weight": .28,
+        "level2": [ {
+            "name": "Самарская область",
+            "weight": .04
+        }, {
+            "name": "Самара",
+            "weight": .19
+        }, {
+            "name": "Тольятти",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Санкт-Петербург",
+        "weight": .87,
+        "level2": null
+    }, {
+        "name": "Саратовская область",
+        "weight": .25,
+        "level2": [ {
+            "name": "Саратовская область",
+            "weight": .03
+        }, {
+            "name": "Саратов",
+            "weight": .22
+        } ]
+    }, {
+        "name": "Сахалин",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Свердловская область",
+        "weight": .52,
+        "level2": [ {
+            "name": "Свердловская область",
+            "weight": .06
+        }, {
+            "name": "Верхняя Салда",
+            "weight": .04
+        }, {
+            "name": "Екатеринбург",
+            "weight": .42
+        } ]
+    }, {
+        "name": "Северная Осетия",
+        "weight": .04,
+        "level2": [ {
+            "name": "Северная Осетия",
+            "weight": .01
+        }, {
+            "name": "Владикавказ",
+            "weight": .03
+        } ]
+    }, {
+        "name": "Смоленская область",
+        "weight": .14,
+        "level2": [ {
+            "name": "Смоленская область",
+            "weight": .02
+        }, {
+            "name": "Смоленск",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Ставропольский край",
+        "weight": .76,
+        "level2": [ {
+            "name": "Ставропольский край",
+            "weight": .04
+        }, {
+            "name": "Ессентуки",
+            "weight": .14
+        }, {
+            "name": "Железноводск",
+            "weight": .07
+        }, {
+            "name": "Кисловодск",
+            "weight": .31
+        }, {
+            "name": "Пятигорск",
+            "weight": .15
+        }, {
+            "name": "Ставрополь",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Тамбовская область",
+        "weight": .07,
+        "level2": [ {
+            "name": "Тамбов",
+            "weight": .07
+        } ]
+    }, {
+        "name": "Татарстан",
+        "weight": .61,
+        "level2": [ {
+            "name": "Татарстан",
+            "weight": .12
+        }, {
+            "name": "Казань",
+            "weight": .49
+        } ]
+    }, {
+        "name": "Тверская область",
+        "weight": .25,
+        "level2": [ {
+            "name": "Тверская область",
+            "weight": .16
+        }, {
+            "name": "Тверь",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Томская область",
+        "weight": .06,
+        "level2": [ {
+            "name": "Томская область",
+            "weight": .01
+        }, {
+            "name": "Томск",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Тульская область",
+        "weight": .16,
+        "level2": [ {
+            "name": "Тульская область",
+            "weight": .07
+        }, {
+            "name": "Тула",
+            "weight": .09
+        } ]
+    }, {
+        "name": "Тюменская область",
+        "weight": .19,
+        "level2": [ {
+            "name": "Тюменская область",
+            "weight": .05
+        }, {
+            "name": "Тюмень",
+            "weight": .14
+        } ]
+    }, {
+        "name": "Удмуртия",
+        "weight": .05,
+        "level2": [ {
+            "name": "Удмуртия",
+            "weight": .01
+        }, {
+            "name": "Ижевск",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Ульяновская область",
+        "weight": .07,
+        "level2": [ {
+            "name": "Ульяновская область",
+            "weight": .03
+        }, {
+            "name": "Ульяновск",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Хабаровский край",
+        "weight": .13,
+        "level2": [ {
+            "name": "Хабаровский край",
+            "weight": .01
+        }, {
+            "name": "Хабаровск",
+            "weight": .12
+        } ]
+    }, {
+        "name": "Хакасия",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Ханты-Мансийский автономный округ",
+        "weight": .13,
+        "level2": [ {
+            "name": "Ханты-Мансийский автономный округ",
+            "weight": .04
+        }, {
+            "name": "Сургут",
+            "weight": .05
+        }, {
+            "name": "Ханты-Мансийск",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Челябинская область",
+        "weight": .4,
+        "level2": [ {
+            "name": "Челябинская область",
+            "weight": .12
+        }, {
+            "name": "Магнитогорск",
+            "weight": .04
+        }, {
+            "name": "Челябинск",
+            "weight": .24
+        } ]
+    }, {
+        "name": "Чувашия",
+        "weight": .07,
+        "level2": [ {
+            "name": "Чувашия",
+            "weight": .01
+        }, {
+            "name": "Чебоксары",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Ямало-Ненецкий автономный округ",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Ярославская область",
+        "weight": .44,
+        "level2": [ {
+            "name": "Ярославская область",
+            "weight": .04
+        }, {
+            "name": "Мышкин",
+            "weight": .04
+        }, {
+            "name": "Переславль-Залесский",
+            "weight": .06
+        }, {
+            "name": "Рыбинский район",
+            "weight": .05
+        }, {
+            "name": "Углич",
+            "weight": .04
+        }, {
+            "name": "Ярославль",
+            "weight": .21
+        } ]
+    } ]
+}, {
+    "name": "Румыния",
+    "lat": 45.8395,
+    "lon": 24.9856,
+    "weight": .08,
+    "level1": null
+}, {
+    "name": "США",
+    "lat": 39.4959,
+    "lon": -98.99,
+    "weight": .88,
+    "level1": [ {
+        "name": "США",
+        "weight": .43,
+        "level2": null
+    }, {
+        "name": "Калифорния",
+        "weight": .13,
+        "level2": [ {
+            "name": "Калифорния",
+            "weight": .07
+        }, {
+            "name": "Лос-Анджелес",
+            "weight": .06
+        } ]
+    }, {
+        "name": "Марианские острова",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Невада",
+        "weight": .04,
+        "level2": [ {
+            "name": "Невада",
+            "weight": .01
+        }, {
+            "name": "Лас-Вегас",
+            "weight": .03
+        } ]
+    }, {
+        "name": "Нью-Йорк",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Флорида",
+        "weight": .08,
+        "level2": [ {
+            "name": "Флорида",
+            "weight": .02
+        }, {
+            "name": "Майами",
+            "weight": .06
+        } ]
+    } ]
+}, {
+    "name": "Сейшельские Острова",
+    "lat": -4.678,
+    "lon": 55.4656,
+    "weight": .16,
+    "level1": null
+}, {
+    "name": "Сербия",
+    "lat": 44.0324,
+    "lon": 20.8068,
+    "weight": .09,
+    "level1": [ {
+        "name": "Сербия",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Белград",
+        "weight": .05,
+        "level2": null
+    } ]
+}, {
+    "name": "Сингапур",
+    "lat": 1.2902,
+    "lon": 103.852,
+    "weight": .12,
+    "level1": null
+}, {
+    "name": "Словакия",
+    "lat": 48.7075,
+    "lon": 19.4849,
+    "weight": .08,
+    "level1": null
+}, {
+    "name": "Словения",
+    "lat": 46.1195,
+    "lon": 14.8217,
+    "weight": .16,
+    "level1": null
+}, {
+    "name": "Таджикистан",
+    "lat": 39.0422,
+    "lon": 70.8482,
+    "weight": .09,
+    "level1": null
+}, {
+    "name": "Таиланд",
+    "lat": 15.1305,
+    "lon": 101.0178,
+    "weight": 2.92,
+    "level1": [ {
+        "name": "Таиланд",
+        "weight": .79,
+        "level2": null
+    }, {
+        "name": "Бангкок",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Краби",
+        "weight": .49,
+        "level2": null
+    }, {
+        "name": "Паттайя",
+        "weight": .57,
+        "level2": null
+    }, {
+        "name": "Пхукет",
+        "weight": .73,
+        "level2": null
+    }, {
+        "name": "Самуй",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Хуахин",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Танзания",
+    "lat": -6.2966,
+    "lon": 34.8118,
+    "weight": .05,
+    "level1": null
+}, {
+    "name": "Тунис",
+    "lat": 34.1146,
+    "lon": 9.5718,
+    "weight": .54,
+    "level1": [ {
+        "name": "Тунис",
+        "weight": .26,
+        "level2": null
+    }, {
+        "name": "Монастир",
+        "weight": .05,
+        "level2": null
+    }, {
+        "name": "Сус",
+        "weight": .1,
+        "level2": null
+    }, {
+        "name": "Хаммамет",
+        "weight": .13,
+        "level2": null
+    } ]
+}, {
+    "name": "Туркмения",
+    "lat": 39.1941,
+    "lon": 59.1786,
+    "weight": .03,
+    "level1": null
+}, {
+    "name": "Турция",
+    "lat": 39.9113,
+    "lon": 32.8509,
+    "weight": 12.34,
+    "level1": [ {
+        "name": "Турция",
+        "weight": 2.16,
+        "level2": null
+    }, {
+        "name": "Аланья",
+        "weight": 2.4,
+        "level2": [ {
+            "name": "Аланья",
+            "weight": 2.35
+        }, {
+            "name": "Конаклы",
+            "weight": .05
+        } ]
+    }, {
+        "name": "Анталья",
+        "weight": .62,
+        "level2": null
+    }, {
+        "name": "Белек",
+        "weight": .95,
+        "level2": null
+    }, {
+        "name": "Бодрум",
+        "weight": .2,
+        "level2": null
+    }, {
+        "name": "Даламан",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Дидим",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Кемер",
+        "weight": 3.25,
+        "level2": [ {
+            "name": "Кемер",
+            "weight": 3.03
+        }, {
+            "name": "Бельдиби",
+            "weight": .08
+        }, {
+            "name": "Гёйнюк",
+            "weight": .04
+        }, {
+            "name": "Текирова",
+            "weight": .06
+        }, {
+            "name": "Чамьюва",
+            "weight": .04
+        } ]
+    }, {
+        "name": "Кушадасы",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Мармарис",
+        "weight": .59,
+        "level2": [ {
+            "name": "Мармарис",
+            "weight": .56
+        }, {
+            "name": "Ичмелер",
+            "weight": .03
+        } ]
+    }, {
+        "name": "Сиде",
+        "weight": 1.35,
+        "level2": null
+    }, {
+        "name": "Стамбул",
+        "weight": .49,
+        "level2": null
+    }, {
+        "name": "Фетхие",
+        "weight": .19,
+        "level2": null
+    } ]
+}, {
+    "name": "Узбекистан",
+    "lat": 41.7651,
+    "lon": 63.1501,
+    "weight": .15,
+    "level1": [ {
+        "name": "Узбекистан",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Ташкент",
+        "weight": .06,
+        "level2": null
+    } ]
+}, {
+    "name": "Украина",
+    "lat": 48.4636,
+    "lon": 31.686,
+    "weight": .73,
+    "level1": [ {
+        "name": "Украина",
+        "weight": .34,
+        "level2": null
+    }, {
+        "name": "Днепропетровская область",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Запорожская область",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Киев",
+        "weight": .11,
+        "level2": null
+    }, {
+        "name": "Львовская область",
+        "weight": .04,
+        "level2": null
+    }, {
+        "name": "Одесская область",
+        "weight": .11,
+        "level2": [ {
+            "name": "Одесская область",
+            "weight": .01
+        }, {
+            "name": "Одесса",
+            "weight": .1
+        } ]
+    }, {
+        "name": "Харьковская область",
+        "weight": .03,
+        "level2": [ {
+            "name": "Харьков",
+            "weight": .03
+        } ]
+    } ]
+}, {
+    "name": "Филиппины",
+    "lat": 15.9482,
+    "lon": 121.4232,
+    "weight": .18,
+    "level1": [ {
+        "name": "Филиппины",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Боракай",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Финляндия",
+    "lat": 64.5199,
+    "lon": 26.283,
+    "weight": .49,
+    "level1": [ {
+        "name": "Финляндия",
+        "weight": .39,
+        "level2": null
+    }, {
+        "name": "Хельсинки",
+        "weight": .1,
+        "level2": null
+    } ]
+}, {
+    "name": "Франция",
+    "lat": 46.6218,
+    "lon": 2.452,
+    "weight": 1.45,
+    "level1": [ {
+        "name": "Франция",
+        "weight": .7,
+        "level2": null
+    }, {
+        "name": "Ницца",
+        "weight": .07,
+        "level2": null
+    }, {
+        "name": "Париж",
+        "weight": .64,
+        "level2": null
+    }, {
+        "name": "Французская Полинезия",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Хорватия",
+    "lat": 45.1401,
+    "lon": 16.428,
+    "weight": .35,
+    "level1": [ {
+        "name": "Хорватия",
+        "weight": .31,
+        "level2": null
+    }, {
+        "name": "Дубровник",
+        "weight": .04,
+        "level2": null
+    } ]
+}, {
+    "name": "Черногория",
+    "lat": 42.7848,
+    "lon": 19.2488,
+    "weight": .81,
+    "level1": [ {
+        "name": "Черногория",
+        "weight": .53,
+        "level2": null
+    }, {
+        "name": "Будва",
+        "weight": .25,
+        "level2": null
+    }, {
+        "name": "Тиват",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Чехия",
+    "lat": 49.7391,
+    "lon": 15.3315,
+    "weight": 1.42,
+    "level1": [ {
+        "name": "Чехия",
+        "weight": .49,
+        "level2": null
+    }, {
+        "name": "Карловы Вары",
+        "weight": .15,
+        "level2": null
+    }, {
+        "name": "Прага",
+        "weight": .78,
+        "level2": null
+    } ]
+}, {
+    "name": "Чили",
+    "lat": -35.2967,
+    "lon": -71.2281,
+    "weight": .04,
+    "level1": null
+}, {
+    "name": "Швейцария",
+    "lat": 46.8002,
+    "lon": 8.2292,
+    "weight": .27,
+    "level1": [ {
+        "name": "Швейцария",
+        "weight": .21,
+        "level2": null
+    }, {
+        "name": "Женева",
+        "weight": .03,
+        "level2": null
+    }, {
+        "name": "Цюрих",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Швеция",
+    "lat": 62.8218,
+    "lon": 16.7354,
+    "weight": .2,
+    "level1": [ {
+        "name": "Швеция",
+        "weight": .09,
+        "level2": null
+    }, {
+        "name": "Стокгольм",
+        "weight": .11,
+        "level2": null
+    } ]
+}, {
+    "name": "Шри-Ланка",
+    "lat": 7.6416,
+    "lon": 80.692,
+    "weight": .41,
+    "level1": [ {
+        "name": "Шри-Ланка",
+        "weight": .38,
+        "level2": null
+    }, {
+        "name": "Бентота",
+        "weight": .03,
+        "level2": null
+    } ]
+}, {
+    "name": "Эстония",
+    "lat": 58.6837,
+    "lon": 25.8387,
+    "weight": .29,
+    "level1": [ {
+        "name": "Эстония",
+        "weight": .14,
+        "level2": null
+    }, {
+        "name": "Таллинн",
+        "weight": .15,
+        "level2": null
+    } ]
+}, {
+    "name": "ЮАР",
+    "lat": -29.0021,
+    "lon": 25.0804,
+    "weight": .1,
+    "level1": null
+}, {
+    "name": "Ямайка",
+    "lat": 18.1578,
+    "lon": -77.3112,
+    "weight": .04,
+    "level1": null
+}, {
+    "name": "Япония",
+    "lat": 36.6536,
+    "lon": 137.9813,
+    "weight": .2,
+    "level1": [ {
+        "name": "Япония",
+        "weight": .16,
+        "level2": null
+    }, {
+        "name": "Токио",
+        "weight": .04,
+        "level2": null
+    } ]
+} ]

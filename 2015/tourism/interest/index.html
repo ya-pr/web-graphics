@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Изменение интереса к туризму и путешествиям в российских городах-миллионерах</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="header">Изменение интереса к туризму и путешествиям в российских городах-миллионерах</div>
+    <div class="content">
+        <div class="first-row">
+            <div class="sort">
+                    Отсортировать города:<br>
+                    <div class="sort-button alphabet">
+                        по алфавиту
+                    </div>
+                    <div class="sort-button interest">
+                        по снижению интереса
+                    </div>
+                </div><!--
+            --><div class="legend">
+                <div class="subheader">Цвет кривой показывает, как сильно снизился интерес к туризму в этом городе:</div>
+                <div class="gradient"></div>
+                <div class="legend-caption-right">в два раза</div>
+                <div class="legend-caption-left">на четверть</div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="menu">
+                <div class="all-russia"></div>
+                <div class="cities"></div>
+                <div class="deselect">Снять выделение</div>
+            </div><!--
+            --><div class="chart"></div>
+        </div>
+    </div>
+    <div class="caption">По данным поиска Яндекса, январь 2014 – июнь 2015</div>
+
+    <script src="../../../js/d3.v3.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
