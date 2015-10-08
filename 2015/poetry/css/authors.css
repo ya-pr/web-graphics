@@ -1,0 +1,171 @@
+/* ОБЩИЕ НАСТРОЙКИ ВСЕГО HTML */
+body {
+    font-family: Arial;
+    font-size: 11px;
+}
+
+
+/* ЗАГОЛОВОК */
+body > .title {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-kerning: none;
+}
+
+
+/* ПОДВАЛ */
+body > .note {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ЛЕГЕНДА */
+.legend {
+    background-color: rgb(246, 245, 243);
+    max-width: 1080px;
+}
+
+.legend_names {
+    font-weight: bold;
+}
+
+.legend .passive {
+    opacity: 0.1;
+}
+
+
+/* ДИАГРАММА */
+.container {
+    position: relative;
+}
+
+
+/* ОСИ */
+.axis {
+    shape-rendering: crispEdges;
+}
+
+
+/* Линии и засечки */
+.axis path,
+.axis line {
+    display: none;
+}
+
+
+/* Названия осей */
+.axis .label {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+
+/* Спрятанные засечки */
+.axis.hide .tick {
+    display: none;
+}
+
+
+/* ВСПЛЫВАЮЩЕЕ ОКНО */
+.popup {
+    position: absolute;
+    max-width: 310px;
+    min-width: 200px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(246, 245, 243);
+}
+
+.popup .title {
+    margin: 0;
+    padding: 0;
+}
+
+.popup .info {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.popup .top_name {
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+.popup .note {
+    font-size: 9px;
+    font-family: Verdana;
+    margin: 0;
+    padding-bottom: 5px;
+}
+
+
+/* Названия */
+.name {
+    padding-left: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+
+/* Бары */
+.bar div {
+    background-color: rgb(31, 150, 170);
+    height: 1em;
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 13px;
+    float: right;
+}
+
+
+/* Значения */
+.bar div .value {
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+}
+
+
+/* ЭЛЕМЕНТЫ ДИАГРАММЫ */
+.authors text {
+    display: none;
+}
+
+.authors text.author {
+    display: block;
+    fill: gray;
+    font-family: Verdana;
+    font-size: 9px;
+}
+
+.authors line.life {
+    shape-rendering: crispEdges;
+    stroke-width: 2px;
+    display: none;
+}
+
+
+/* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ */
+.authors g.passive {
+    opacity: 0.1;
+}
+
+.authors g.active > text,
+.authors g.active line.life {
+    display: block;
+}
+
+
+/* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ НА ГРУППУ В ЛЕГЕНДЕ */
+.authors g.group_choise > circle,
+.authors g.group_choise > .author {
+    display: block;
+}
+
+.authors g.group_choise > .rank {
+    display: block;
+    font-size: 10px;
+}
