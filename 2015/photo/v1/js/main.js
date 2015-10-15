@@ -83,7 +83,7 @@ ymaps.ready(function() {
         buttons.forEach(function(butt) {
             butt.events.add('click', function() {
                 val = butt.data.get('value');
-                if (butt.state.get('enabled') == true) {
+                if (butt.state.get('enabled') === true) {
                     heatmap.setData(val);
                     butt.state.set('enabled', false);
                     butt.state.set('selected', true);
