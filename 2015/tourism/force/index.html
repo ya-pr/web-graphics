@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Карта сходства туристических направлений</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="header">Карта сходства туристических направлений</div>
+    <div class="subheader">Размер круга пропорционален популярности курорта в поиске Яндекса. Чем ближе круги друг к другу,
+        <br>тем чаще их ищут вместе на сервисе Яндекс.Путешествия.
+        <br>Нажмите на город или курорт, чтобы увидеть, какие направления искали вместе с ним.</div>
+    <form>
+        <input class="search" value="Введите название города или курорта" type="text">
+        <!-- <div class="suggest passive"></div> -->
+    </form>
+    <div class="content"></div>
+    <div class="sidebar passive">
+        <div class="selected-city"></div>
+        Похожие направления:
+        <ul></ul>
+    </div>
+    <div class="legend">
+        <table>
+            <colgroup>
+                <col id="colors">
+                <col>
+            </colgroup>
+            <!--             <tr>
+                <td class="egypt"></td>
+                <td>Египет и Турция</td>
+            </tr> -->
+            <tr>
+                <td class="russia"></td>
+                <td>Россия и ближнее зарубежье</td>
+            </tr>
+            <!--            <tr>
+                <td class="asia"></td>
+                <td>Восточная и Юго-Восточная Азия</td>
+            </tr> -->
+            <!--            <tr>
+                <td class="bulgary"></td>
+                <td>Южная Европа и Болгария</td>
+            </tr> -->
+            <tr>
+                <td class="europe"></td>
+                <td>Европа</td>
+            </tr>
+            <tr>
+                <td class="africa"></td>
+                <td>Северная Африка и Ближний Восток</td>
+            </tr>
+            <tr>
+                <td class="indian"></td>
+                <td>Азия и острова Индийского океана</td>
+            </tr>
+            <tr>
+                <td class="america"></td>
+                <td>Америка</td>
+            </tr>
+        </table>
+    </div>
+    <div class="scale-buttons">
+        <div class="scale-button plus">
+            <div class="pic"></div>
+        </div>
+        <div class="scale-button minus passive-button">
+            <div class="pic"></div>
+        </div>
+    </div>
+    <div class="caption">По данным поиска Яндекса и сервиса Яндекс.Путешествия, апрель–июнь 2015</div>
+    <script src="../../../js/d3.v3.min.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

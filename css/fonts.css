@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Textbook-light";
+    src: local('Textbook New Light'), local('TextbookNew-Light');
+    src: url('../fonts/TBN45.otf');
+}
+
+@font-face {
+    font-family: "Textbook-regular";
+    src: local('Textbook New'), local('TextbookNew');
+    src: url('../fonts/TBN55.otf');
+}
+
+@font-face {
+    font-family: "Textbook-bold";
+    src: local('Textbook New Bold'), local('TextbookNew-Bold');
+    src: url('../fonts/TBN75.otf');
+}
+
+@font-face {
+    font-family: 'textbook';
+    src: local('textbook');
+    src: url("/yandex-company2-www/_/1wUguRKdVPX0Lw2dlQ1I-l4X0hI.woff"), url("/yandex-company2-www/_/_qMiA1SBxUbup2B5BieefMuSpsk.ttf")
+}
+
+@font-face {
+    font-family: 'textbook';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Textbook New Bold'), local('TextbookNew-Bold');
+    src: url("/yandex-company2-www/_/vsupuRkJ3ZaCST9UR3oQ8vPvR2w.woff"), url("/yandex-company2-www/_/WhdtZaaW0Slo0zT5wFdWWGctSdE.ttf")
+}
+
+@font-face {
+    font-family: 'textbook';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Textbook New Light'), local('TextbookNew-Light');
+    src: url("/yandex-company2-www/_/XCAj7cCVDg9CjzRPSQXZkeVNNJ0.woff"), url("/yandex-company2-www/_/gXnpOSJ1Dj0gjZRa5Xb2kWw1yIo.ttf")
+}
+
+@font-face {
+    font-family: 'textbook';
+    font-weight: 700;
+    font-style: normal;
+    src: local('Textbook New Bold'), local('TextbookNew-Bold');
+    src: url("/yandex-company2-www/_/vsupuRkJ3ZaCST9UR3oQ8vPvR2w.woff"), url("/yandex-company2-www/_/WhdtZaaW0Slo0zT5wFdWWGctSdE.ttf")
+}
+
+@font-face {
+    font-family: 'textbook';
+    font-weight: 300;
+    font-style: normal;
+    src: local('Textbook New Light'), local('TextbookNew-Light');
+    src: url("/yandex-company2-www/_/XCAj7cCVDg9CjzRPSQXZkeVNNJ0.woff"), url("/yandex-company2-www/_/gXnpOSJ1Dj0gjZRa5Xb2kWw1yIo.ttf")
+}

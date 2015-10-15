@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 900px;
+    cursor: default;
+    font: "Textbook-light", Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+.content {
+    width: 900px;
+    color: #555150;
+    margin-top: 1.5em;
+}
+
+div {
+    vertical-align: top;
+}
+
+.header {
+    font: 1.25em "Textbook-bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    padding-bottom: 4px;
+}
+
+.subheader {
+    font: 1.35em "Textbook-light", Arial, Helvetica, sans-serif;
+    color: #555150;
+    padding-bottom: 5px;
+    line-height: 1;
+}
+
+.part_header {
+    color: #555150;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font: 1.25em "Textbook-regular", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.left_side,
+.right_side {
+    width: 50%;
+    display: inline-block;
+}
+
+.row {
+    padding-bottom: 32px;
+}
+
+.img {
+    display: inline-block;
+    /*min-width: 101px;*/
+    width: 25%;
+}
+
+.text {
+    display: inline-block;
+    width: 75%;
+}
+
+.marker {
+    font-weight: bold;
+    font: 1.2em "Textbook-bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+}
+
+.example {
+    font: 1.3em "Textbook-light", Arial, Helvetica, sans-serif;
+    color: #737373;
+    padding-bottom: 16px;
+}
+
+.left_side .arrow {
+    color: #f36b28;
+}
+
+.right_side .arrow {
+    color: #71c529;
+}
+
+.caption {
+    font: 1em "Textbook-light", Arial, Helvetica, sans-serif;
+    color: #555150;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+}

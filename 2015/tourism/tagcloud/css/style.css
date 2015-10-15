@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 900px;
+    height: 500px;
+    font-size: 62.5%;
+}
+
+svg {
+    width: 880px;
+    height: 500px;
+}
+
+text {
+    font-family: "Textbook-regular" !important;
+}
+
+.header {
+    font: 1.25em "Textbook-bold", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .055em;
+    position: absolute;
+}
+
+.caption {
+    font-family: "Textbook-light";
+    font-size: 1em;
+    color: #555150;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: 480px;
+}
