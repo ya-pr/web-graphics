@@ -1,0 +1,29 @@
+### Список исследований
+- Путешествия в поиске Яндекса
+  - [Изменение туристической привлекательности разных стран](2015/tourism/change/index.html)
+  - [Change in Tourists Interests toward Different Countries](2015/tourism/change/eng.html)
+  - [Карта сходства туристических направлений](2015/tourism/force/index.html)
+  - [Изменение интереса к туризму и путешествиям в российских городах-миллионерах](2015/tourism/interest/index.html)
+  - [Популярность туристических направлений в разных городах России](2015/tourism/map/index.html)
+  - [Как изменились формулировки туристических запросов по сравнению с прошлым годом](2015/tourism/table/index.html)
+  - [How wording for tourism queries has changed compared to the previous year](2015/tourism/table/eng.html)
+  - [50 самых частотных слов и словосочетаний в туристических запросах](2015/tourism/tagcloud/index.html)
+  - [50 most frequent words and phrases in tourist’s requests](2015/tourism/tagcloud/eng.html)
+- Где и когда фотографируют пользователи смартфонов и планшетов
+  - Версия 1 (основная, на сайте). Тяжелые данные
+    - [Где фотографировали пользователи Яндекс.Диска](2015/photo/v1/index.html)
+    - [Locations tagged in user photos stored on Yandex.Disk](2015/photo/v1/eng.html)
+  - Версия 2. Данные легче. Используется загрузка в данных в геоколлекцию
+    - [Где фотографировали пользователи Яндекс.Диска](2015/photo/v2/index.html)
+    - [Locations tagged in user photos stored on Yandex.Disk](2015/photo/v2/eng.html)
+  - Версия 3. Данные, как в версии 2. Загрузка в данных в геоколлекцию не используется
+    - [Где фотографировали пользователи Яндекс.Диска](2015/photo/v3/index.html)
+    - [Locations tagged in user photos stored on Yandex.Disk](2015/photo/v3/eng.html)
+- Если не Пушкин, то кто: какие стихи ищут в интернете
+  - [Авторы, чьи произведения искали чаще всего](2015/poetry/authors.html)
+  - [50 произведений, которые искали чаще всего](2015/poetry/poems.html)
+  - [Попуярные произведения, которые чаще ищут не по названию](2015/poetry/titles.html)
+- Разные страны в поиске Яндекса
+  - [Темы запросов о культуре разных стран](2015/countries/culture/index.html)
+  - [Карта мира по интересам пользователей поиска](2015/countries/maps/index.html)
+  - [Самые популярные слова в запросах о разных странах](2015/countries/wordsmap/index.html)
