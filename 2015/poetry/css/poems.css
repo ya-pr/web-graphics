@@ -1,0 +1,186 @@
+/* ОБЩИЕ НАСТРОЙКИ ВСЕГО HTML */
+body {
+    font-family: Arial;
+    font-size: 11px;
+}
+
+
+/* ЗАГОЛОВОК */
+body > .title {
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-kerning: none;
+}
+
+
+/* ПОДВАЛ */
+body > .note {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ЛЕГЕНДА */
+.legend {
+    background-color: rgb(246, 245, 243);
+    max-width: 1080px;
+}
+
+.legend_names {
+    font-weight: bold;
+}
+
+.legend .passive {
+    opacity: 0.1;
+}
+
+
+/* ДИАГРАММА */
+.container {
+    position: relative;
+}
+
+
+/* ОСИ */
+.axis {
+    shape-rendering: crispEdges;
+}
+
+
+/* Линии и засечки */
+.axis path,
+.axis line {
+    display: none;
+}
+
+
+/* Названия осей */
+.axis .label {
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+
+/* Спрятанные засечки */
+.axis.hide .tick {
+    display: none;
+}
+
+
+/* ВСПЛЫВАЮЩЕЕ ОКНО */
+.popup {
+    position: absolute;
+    width: 230px;
+    padding: 10px;
+    margin: 0;
+    background-color: rgb(246, 245, 243);
+}
+
+.popup .title {
+    margin: 0;
+    padding: 0;
+}
+
+.popup .author_name {
+    font-weight: bold;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.popup .info {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.popup .top_name {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.popup p.top_poems,
+.popup .query {
+    margin: 0;
+}
+
+
+/* Названия */
+.popup .name {
+    padding-left: 10px;
+}
+
+
+/* Бары */
+.bar div {
+    background-color: rgb(31, 150, 170);
+    height: 1em;
+    position: relative;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    margin-left: 13px;
+    float: right;
+}
+
+
+/* Значения */
+.bar div .value {
+    font-size: 10px;
+    position: absolute;
+    top: -10px;
+}
+
+
+/* ЭЛЕМЕНТЫ ДИАГРАММЫ */
+.poems text {
+    display: none;
+}
+
+.poems text.poem {
+    display: block;
+    fill: gray;
+    font-family: Verdana;
+    font-size: 9px;
+}
+
+.poems text.poem.full_name {
+    display: none;
+}
+
+.poems text.poem.short_name {
+    opacity: 0.7;
+}
+
+
+/* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ */
+.poems g.passive {
+    opacity: 0.1;
+}
+
+.poems g.active > text,
+.poems g.active > text.poem.full_name {
+    display: block;
+}
+
+.poems g.active > text.poem.short_name {
+    display: none;
+}
+
+.poems g.active line.life {
+    display: block;
+}
+
+
+/* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ НА ГРУППУ В ЛЕГЕНДЕ */
+.poems g.group_choise > circle,
+.poems g.group_choise > .poem {
+    display: block;
+}
+
+.poems g.group_choise > text.poem.short_name {
+    display: none;
+}
+
+.poems g.group_choise > .rank {
+    display: block;
+    font-size: 10px;
+}

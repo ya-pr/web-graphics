@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Попуярные произведения, которые чаще ищут не по названию</title>
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="css/titles.css">
+</head>
+
+<body>
+    <h3 class="title">Популярные произведения, которые чаще ищут не по названию</h3>
+    <div class="big_legend">
+        <p>Наведите курсор на полоску на графике, чтобы увидеть, какую строку из стихотворения искали чаще всего.</p>
+        <div class="legend">
+            <div class="line">
+                <div class="rect" style="background-color:rgb(31,150,170);"></div>
+                <div class="name">Доля запросов без указания названия произведения, %</div>
+            </div>
+            <div class="line">
+                <div class="rect" style="background-color:rgb(255,186,35);"></div>
+                <div class="name">Доля запросов с указанием названия произведения, %</div>
+            </div>
+        </div>
+    </div>
+    <div class="content"></div>
+    <div class="note">
+        <p>По данным поиска Яндекса, апрель 2014 — март 2015<br />
+           Произведения упорядочены по убыванию общего количества запросов про них.</p>
+    </div>
+    <script src="../../js/d3.v3.min.js"></script>
+    <script src="js/titles.js"></script>
+</body>
+
+</html>
