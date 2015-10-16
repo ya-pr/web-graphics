@@ -2,8 +2,8 @@ ymaps.ready(function() {
     var layerName = "user#layer";
     var zoomRange = [2, 4];
     var Layer = function() {
-        var layer = new ymaps.Layer("../../../../img/background.png", {
-            notFoundTile: "../../../../img/background.png"
+        var layer = new ymaps.Layer("../../../img/background.png", {
+            notFoundTile: "../../../img/background.png"
         });
         layer.getZoomRange = function() {
             return ymaps.vow.resolve(zoomRange);
@@ -63,7 +63,7 @@ ymaps.ready(function() {
     });
     map.controls.add(titleControl);
 
-    osmeRegions.geoJSON('../../../../data/regions.json', {
+    osmeRegions.geoJSON('../../../data/regions.json', {
         lang: 'ru',
         quality: 0,
         type: 'coast'
