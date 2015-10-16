@@ -1,15 +1,75 @@
 ymaps.ready(function() {
+    // Создаем карту
     var map = new ymaps.Map('YMapsID', {
         center: [55, 42],
-        controls: ['zoomControl'],
+        controls: [],
         zoom: 4
     }, {
         maxZoom: 8,
         minZoom: 3
     });
+    // Добавляем элементы управления
     map.controls.add(new ymaps.control.TypeSelector(['yandex#map', 'yandex#satellite']));
+    map.controls.add('zoomControl');
+
+    // Обрабатываем данные
+    var seasons = ['spring', 'summer', 'autumn', 'winter'];
+    var buttons = [];
+    var collections = {
+        spring: {},
+        summer: {},
+        autumn: {},
+        winter: {},
+    };
+
+    for (var j = 0; j < seasons.length; j++) {
+        // Проходимся по сезонам года
+        var season = seasons[j],
+            season_data = data[season];
+        collections[season] = {
+            type: "FeatureCollection",
+            features: []
+        };
+        // Добавляем данные в коллекцию геообъектов
+        for (var id = 0; id < season_data.length; id++) {
+            var p = season_data[id];
+            var point = {
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: p.slice(0, 2)
+                },
+                properties: {
+                    weight: p[2]
+                }
+            };
+            collections[season].features.push(point);
+        }
+
+        // Добавляем кнопку
+        buttons[j] = new ymaps.control.Button({
+            data: {
+                content: labels[j],
+                value: collections[season],
+            },
+            options: {
+                selectOnClick: false,
+                maxWidth: 90
+            },
+            state: {
+                enabled: true,
+                selected: false
+            }
+        });
+    }
+
+    // Меняем стиль отображения первой кнопки
+    buttons[0].select();
+    buttons[0].disable();
+
+    // Загружаем модуль тепловой карты
     ymaps.modules.require(['Heatmap'], function(Heatmap) {
-        var heatmap = new Heatmap(data_spring, {
+        var heatmap = new Heatmap(collections.spring, {
             gradient: {
                 0.1: 'rgba(76, 187, 134, 0.7)',
                 0.5: 'rgba(255, 204, 0, 0.9)',
@@ -22,68 +82,11 @@ ymaps.ready(function() {
         });
         heatmap.setMap(map);
 
-        var spring_button = new ymaps.control.Button({
-            data: {
-                content: 'Весна',
-                value: data_spring,
-            },
-            options: {
-                selectOnClick: false,
-                maxWidth: 90
-            },
-            state: {
-                enabled: false,
-                selected: true
-            }
-        });
-        var summer_button = new ymaps.control.Button({
-            data: {
-                content: 'Лето',
-                value: data_summer,
-            },
-            options: {
-                selectOnClick: false,
-                maxWidth: 90
-            },
-            state: {
-                enabled: true,
-                selected: false
-            }
-        });
-        var autumn_button = new ymaps.control.Button({
-            data: {
-                content: 'Осень',
-                value: data_autumn,
-            },
-            options: {
-                selectOnClick: false,
-                maxWidth: 90
-            },
-            state: {
-                enabled: true,
-                selected: false
-            }
-        });
-        var winter_button = new ymaps.control.Button({
-            data: {
-                content: 'Зима',
-                value: data_winter,
-            },
-            options: {
-                selectOnClick: false,
-                maxWidth: 90
-            },
-            state: {
-                enabled: true,
-                selected: false
-            }
-        });
-
-        var buttons = [spring_button, summer_button, autumn_button, winter_button];
+        // Поведение при нажатии на кнопку
         buttons.forEach(function(butt) {
             butt.events.add('click', function() {
                 val = butt.data.get('value');
-                if (butt.state.get('enabled') == true) {
+                if (butt.state.get('enabled') === true) {
                     heatmap.setData(val);
                     butt.state.set('enabled', false);
                     butt.state.set('selected', true);
@@ -97,21 +100,12 @@ ymaps.ready(function() {
             });
         });
 
-        map.controls.add(winter_button, {
-            float: 'left',
-            floatIndex: 1
-        });
-        map.controls.add(autumn_button, {
-            float: 'left',
-            floatIndex: 2
-        });
-        map.controls.add(summer_button, {
-            float: 'left',
-            floatIndex: 3
-        });
-        map.controls.add(spring_button, {
-            float: 'left',
-            floatIndex: 4
-        });
+        // Добавляем кнопку на карту
+        for (var i = 0; i < buttons.length; i++) {
+            map.controls.add(buttons[i], {
+                float: 'left',
+                floatIndex: buttons.length - i
+            });
+        }
     });
 });
