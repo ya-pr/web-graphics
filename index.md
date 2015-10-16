@@ -11,7 +11,7 @@
   - [50 most frequent words and phrases in tourist’s requests](2015/tourism/tagcloud/eng.html)
 - Где и когда фотографируют пользователи смартфонов и планшетов
   - [Где фотографировали пользователи Яндекс.Диска](2015/photo/index.html)
-  - [Locations tagged in user photos stored on Yandex.Disk](2015/photo/eng.html)
+  - [Locations tagged in user photos stored on Yandex.Disk](2015/photo/eng/index.html)
 - Если не Пушкин, то кто: какие стихи ищут в интернете
   - [Авторы, чьи произведения искали чаще всего](2015/poetry/authors.html)
   - [50 произведений, которые искали чаще всего](2015/poetry/poems.html)
