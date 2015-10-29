@@ -53,7 +53,7 @@ var groups = [
     'имажинизм',
     'военная лирика',
     'авторская песня',
-    'детская поэзия',
+    'детская поэзия'
 ];
 var groups_for_domain = [
     'золотой век',
@@ -194,7 +194,7 @@ function add_top_author(data) {
 // ЗАГРУЖАЕМ ДАННЫЕ
 d3.tsv("data/data_authors2.tsv", function(error, data) {
     // Преобразуем данные
-    data.forEach(function(d, i) {
+    data.forEach(function (d) {
         d.rating = +d.rating;
         d.birthYear = +d.birthYear;
         d.deathYear = d.deathYear.replace('н.в.', 2015);
@@ -271,7 +271,9 @@ d3.tsv("data/data_authors2.tsv", function(error, data) {
             return "translate(" + (Math.floor(i / 4) * width_q) + "," + (i % 4 * height_legend_q + height_legend_q / 2) + ")";
         });
     legend_group.append("circle")
-        .attr("r", function(d) {return d3.round(circle_size_max / 3, 1); })
+        .attr("r", function () {
+            return d3.round(circle_size_max / 3, 1);
+        })
         .attr("fill", function(d) {return color(d); });
     legend_group.append("text")
         .attr("x", circle_size_max + 5)
@@ -341,7 +343,7 @@ d3.tsv("data/data_authors2.tsv", function(error, data) {
       .enter().append("g");
 
     // Круги
-    var authors_circles = authors.append("circle")
+    authors.append("circle")
         .attr("cx", function(d) {return x(d.birthYear); })
         .attr("cy", function(d) {return y(d.rating); })
         .attr("r", function(d) {return size(d.total_sqrt); })
@@ -446,7 +448,7 @@ d3.tsv("data/data_authors2.tsv", function(error, data) {
     // ЗАГРУЖАЕМ ДАННЫЕ ПО ЗАПРОСАМ
     d3.tsv("data/data_authors_top_poems2.tsv", function(error, data_poems) {
         // Преобразуем данные
-        data_poems.forEach(function(d, i) {
+        data_poems.forEach(function (d) {
             d.share = +d.share;
         });
 
@@ -470,13 +472,7 @@ d3.tsv("data/data_authors2.tsv", function(error, data) {
             // Добавляем информацию в popup
             popup.html(function() {
                 // Определяем все необходимые для popup данные
-                if (d.deathYear == 2015) {
-                    deathYear = 'н.в.';
-                } else {
-                    deathYear = d.deathYear;
-                }
-
-                count = Math.round(d.total / 10000);
+                var count = Math.round(d.total / 10000);
                 if (count < 100) {
                     count = '<b>' + count * 10 + '</b> тысяч запросов за год';
                 } else if (count == 100) {

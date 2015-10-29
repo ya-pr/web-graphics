@@ -54,7 +54,7 @@ var fields = [
     'Самара',
     'Санкт-Петербург',
     'Уфа',
-    'Челябинск',
+    'Челябинск'
 ];
 
 // Формат данных в русской локализации
@@ -127,10 +127,10 @@ function zoomed() {
         container.select(".boundary").style("stroke-width", 1 / zoom.scale() + "px");
         lastTouch = curTouch;
     }
-    d3.select('.minus').classed('passive-button', function(d) {
+    d3.select('.minus').classed('passive-button', function () {
         return zoom.scale() <= 1;
     });
-    d3.select('.plus').classed('passive-button', function(d) {
+    d3.select('.plus').classed('passive-button', function () {
         return zoom.scale() >= 16;
     });
 }
@@ -172,7 +172,7 @@ d3.json("../../../data/world-110m.json", function(error, world) {
         d3.json("data/regions.min.json", function(error, regions) {
             if (error) throw error;
 
-            max_weight = regions.map(function(region) {
+            var max_weight = regions.map(function(region) {
                 return d3.max(region.regions, function(d) {
                     return d.weight;
                 });
@@ -182,18 +182,19 @@ d3.json("../../../data/world-110m.json", function(error, world) {
             add_top_country(russia);
 
             var fieldSelect = d3.select("#field")
-                .on("change", function(e) {
-                    field = fields[this.selectedIndex];
+                .on("change", function () {
+                    var field = fields[this.selectedIndex];
+                    var data;
                     if (field == 'Вся Россия') {
                         data = russia;
                     } else {
-                        data = regions.filter(function(index) {
-                                return index.reg == field;
-                            })
+                        data = regions.filter(function (index) {
+                            return index.reg == field;
+                        })
                             .pop().regions;
                     }
                     draw(data);
-                    copy_data = data.slice();
+                    var copy_data = data.slice();
                     add_top_country(copy_data);
                 });
 
@@ -233,11 +234,11 @@ d3.json("../../../data/world-110m.json", function(error, world) {
             });
 
         // Pack Layout
-        countryViews.each(function(d, i) {
+        countryViews.each(function (d) {
             var diameter = d.radius * 2 - margin;
             var d3this = d3.select(this).append('g')
                 .attr('class', 'pack')
-                .attr("transform", function(d) {
+                .attr("transform", function () {
                     return "translate(" + [-diameter / 2, -diameter / 2] + ")";
                 });
             var pack = d3.layout.pack()
@@ -262,7 +263,7 @@ d3.json("../../../data/world-110m.json", function(error, world) {
                     return "translate(" + [d.x - d.r, d.y - d.r] + ")";
                 });
 
-            nodesViews.each(function(d, i) {
+            nodesViews.each(function (d) {
                 var diameter = d.r * 2 - margin;
                 var d3this = d3.select(this);
                 var pack = d3.layout.pack()
@@ -278,7 +279,7 @@ d3.json("../../../data/world-110m.json", function(error, world) {
 
                 var nodes = pack.nodes(d);
 
-                var areas = d3this.selectAll(".area")
+                d3this.selectAll(".area")
                     .data(nodes)
                     .enter().append("circle")
                     .attr("class", function(d) {
@@ -303,7 +304,7 @@ d3.json("../../../data/world-110m.json", function(error, world) {
             });
         });
 
-        var allAreas = d3.selectAll('.area')
+        d3.selectAll('.area')
             .on('mouseout', function() {
                 popup.style('display', 'none');
             })
@@ -372,12 +373,12 @@ function click() {
         });
 
         // Вызываем функцию, рисующую топ поэм
-        add_top(data_resort, d);
+        add_top(data_resort);
     } else info.html(html);
 }
 
 // ФУНКЦИЯ ДЛЯ ДОБАВЛЕНИЯ ТОПА РЕГИОНОВ
-function add_top(data, d) {
+function add_top(data) {
     x_bars.domain([0, d3.max(data, function(d) {
         return d.share;
     })]);
