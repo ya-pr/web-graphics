@@ -1,11 +1,11 @@
-ymaps.ready(function() {
+ymaps.ready(function () {
     var layerName = "user#layer";
     var zoomRange = [2, 4];
-    var Layer = function() {
+    var Layer = function () {
         var layer = new ymaps.Layer("../../../img/background.png", {
             notFoundTile: "../../../img/background.png"
         });
-        layer.getZoomRange = function() {
+        layer.getZoomRange = function () {
             return ymaps.vow.resolve(zoomRange);
         };
         return layer;
@@ -25,7 +25,7 @@ ymaps.ready(function() {
     var TitleControlLayout = ymaps.templateLayoutFactory.createClass([
         '<div style="font: 16px arial, sans-serif; position: absolute; top: {{ options.position.top }}px; left: {{ options.position.left }}px">{{ data.content }}</div>'
     ].join(''));
-    var TitleControl = ymaps.util.defineClass(function(params) {
+    var TitleControl = ymaps.util.defineClass(function (params) {
         TitleControl.superclass.constructor.call(this, params.options);
 
         this.data = new ymaps.data.Manager(params.data);
@@ -34,17 +34,16 @@ ymaps.ready(function() {
             options: this.options
         });
     }, ymaps.collection.Item, {
-        onAddToMap: function(map) {
+        onAddToMap: function (map) {
             TitleControl.superclass.onAddToMap.call(this, map);
             this.getParent().getChildElement(this).then(this._onChildElement, this);
         },
-        onRemoveFromMap: function(oldMap) {
+        onRemoveFromMap: function (oldMap) {
             this._layout.setParentElement(null);
 
             TitleControl.superclass.onRemoveFromMap.call(this, oldMap);
         },
-        _onChildElement: function(parentDomContainer) {
-            // this._layout.setParentElement(parentDomContainer);
+        _onChildElement: function () {
             this._layout.setParentElement(map.panes.get('events').getElement());
         }
     });
@@ -67,7 +66,7 @@ ymaps.ready(function() {
         lang: 'ru',
         quality: 0,
         type: 'coast'
-    }, function(geoJson) {
+    }, function (geoJson) {
         var regions = ymaps.geoQuery(geoJson).setOptions({
             fillColor: 'ffffff',
             strokeColor: 'ffffff',
@@ -76,7 +75,7 @@ ymaps.ready(function() {
         jQuery.ajax({
             url: 'data/data.min.json',
             dataType: 'json'
-        }).then(function(data) {
+        }).then(function (data) {
             var listBox = new ymaps.control.ListBox({
                 data: {
                     content: 'Выбрать тему'
@@ -85,20 +84,20 @@ ymaps.ready(function() {
             map.controls.add(listBox, {
                 float: 'right'
             });
-            listBox.events.add('deselect', function(e) {
+            listBox.events.add('deselect', function () {
                 regions.setOptions({
                     fillColor: 'ffffff'
                 });
             });
 
-            data.forEach(function(it) {
+            data.forEach(function (it) {
                 var listBoxItem = new ymaps.control.ListBoxItem({
                     data: {
                         content: it.theme
                     }
                 });
-                listBoxItem.events.add('select', function(e) {
-                    listBox.each(function(i) {
+                listBoxItem.events.add('select', function () {
+                    listBox.each(function (i) {
                         if (i != listBoxItem) {
                             i.deselect();
                         }
@@ -106,8 +105,8 @@ ymaps.ready(function() {
                     titleControl.data.set({
                         content: it.theme
                     });
-                    it.countries.forEach(function(country) {
-                        var res = regions.search(function(region) {
+                    it.countries.forEach(function (country) {
+                        regions.search(function (region) {
                             return region.properties.get('properties.iso3166') == country.id;
                         }).setOptions({
                             fillColor: country.color + ""

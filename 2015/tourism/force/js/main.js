@@ -47,10 +47,6 @@ d3.json("data/data.json", function(data) {
         d.color = d.color.replace(d.color, colorsChanger[d.color]);
     });
 
-    var nestedClasses = d3.nest()
-        .key(function(d) {return d.attributes["Modularity Class"]; })
-        .entries(data);
-
     var x = d3.scale.linear()
         .range([0, width])
         .domain(d3.extent(data, function(d) {return d.x; }));
@@ -88,10 +84,10 @@ d3.json("data/data.json", function(data) {
             return 'translate(' + x(d.x) + "," + y(d.y) + ")";
         })
         .classed('small-node', function(d) {
-            return d.size < 2.5 ? true : false;
+            return d.size < 2.5;
         });
 
-    var circles = nodes.append('circle')
+    nodes.append('circle')
         .attr('class', 'circle')
         .attr('r', function(d) {return size(d.size); })
         .style('fill', function(d) {return d.color; });
@@ -148,7 +144,6 @@ d3.json("data/data.json", function(data) {
             }
 
         } else {
-            result = [];
             nodes.classed('passive-node', false);
             nodes.classed('show-label', false);
             clearSidebar();
@@ -185,10 +180,10 @@ d3.json("data/data.json", function(data) {
             }
         });
         d3.select('.sidebar').classed('passive', false);
-        d3.select('.selected-city').text(function(d) {
+        d3.select('.selected-city').text(function () {
             return selectedNode.label;
         });
-        clusterList = d3.select(".sidebar ul");
+        var clusterList = d3.select(".sidebar ul");
         nodes.each(function(d) {
             if (d.attributes['Modularity Class'] == curCluster &&
                 d.id != selectedNode.id) {
@@ -213,10 +208,10 @@ d3.json("data/data.json", function(data) {
         svg.attr("transform", "translate(" + zoom.translate() + ")scale(" + zoom.scale() + ")");
         adjustLabels(zoom.scale());
         // console.log(zoom.scale());
-        d3.select('.minus').classed('passive-button', function(d) {
+        d3.select('.minus').classed('passive-button', function () {
             return zoom.scale() <= 1;
         });
-        d3.select('.plus').classed('passive-button', function(d) {
+        d3.select('.plus').classed('passive-button', function () {
             return zoom.scale() >= 5;
         });
     }
@@ -233,7 +228,7 @@ d3.json("data/data.json", function(data) {
             }
         });
         if (curScale <= 3) {
-            labels.attr('font-size', function(d) {
+            labels.attr('font-size', function () {
                 return fontSize(curScale).toFixed(1) + 'px';
             });
         } else {
