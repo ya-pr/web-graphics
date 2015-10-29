@@ -1,9 +1,9 @@
-ymaps.ready(function() {
+ymaps.ready(function () {
     var layerName = "user#layer";
     var zoomRange = [4, 6];
-    var Layer = function() {
+    var Layer = function () {
         var layer = new ymaps.Layer("./tiles/%z/%x-%y.png");
-        layer.getZoomRange = function() {
+        layer.getZoomRange = function () {
             return ymaps.vow.resolve(zoomRange);
         };
         return layer;
@@ -27,7 +27,7 @@ ymaps.ready(function() {
         ],
         zoomControlSize: 'small'
     });
-    var hotspotObjectSource = new ymaps.hotspot.ObjectSource('./hotspots/%z/hotspot-%x-%y.js', 'hotspot_callback' /* ,{ noCache: true }*/ );
+    var hotspotObjectSource = new ymaps.hotspot.ObjectSource('./hotspots/%z/hotspot-%x-%y.js', 'hotspot_callback' /* ,{ noCache: true }*/);
     var hotspotLayer = new ymaps.hotspot.Layer(hotspotObjectSource, {
         cursor: 'arrow'
     });

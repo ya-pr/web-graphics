@@ -10,34 +10,34 @@
 </head>
 
 <body>
-    <div class="header">Популярность туристических направлений в разных городах России</div>
-    <div class="subheader">
-        Показаны страны, регионы и курорты, на которые приходится не менее 0,03% запросов про все туристические направления.
-        <br>Нажмите на круг, чтобы увидеть подробную информацию.
+<div class="header">Популярность туристических направлений в разных городах России</div>
+<div class="subheader">
+    Показаны страны, регионы и курорты, на которые приходится не менее 0,03% запросов про все туристические направления.
+    <br>Нажмите на круг, чтобы увидеть подробную информацию.
+</div>
+<div class="container">
+    <svg></svg>
+    <div class="popup"></div>
+    <div class="info">
+        <p class='intro'>Десять самых популярных стран</p>
     </div>
-    <div class="container">
-        <svg></svg>
-        <div class="popup"></div>
-        <div class="info">
-            <p class='intro'>Десять самых популярных стран</p>
+    <form>
+        <p>Выбрать город:</p>
+        <select id="field"></select>
+    </form>
+    <div class="scale-buttons">
+        <div class="scale-button plus">
+            <div class="pic"></div>
         </div>
-        <form>
-            <p>Выбрать город:</p>
-            <select id="field"></select>
-        </form>
-        <div class="scale-buttons">
-            <div class="scale-button plus">
-                <div class="pic"></div>
-            </div>
-            <div class="scale-button minus passive-button">
-                <div class="pic"></div>
-            </div>
+        <div class="scale-button minus passive-button">
+            <div class="pic"></div>
         </div>
     </div>
-    <div class="caption">По данным поиска Яндекса, апрель–июнь 2015</div>
-    <script type="text/javascript" src="../../../js/d3.v3.min.js"></script>
-    <script type="text/javascript" src="../../../js/topojson.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+</div>
+<div class="caption">По данным поиска Яндекса, апрель–июнь 2015</div>
+<script type="text/javascript" src="../../../js/d3.v3.min.js"></script>
+<script type="text/javascript" src="../../../js/topojson.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>

@@ -4,7 +4,6 @@ body {
     font-size: 11px;
 }
 
-
 /* ЗАГОЛОВОК */
 body > .title {
     margin-bottom: 8px;
@@ -12,13 +11,11 @@ body > .title {
     font-kerning: none;
 }
 
-
 /* ПОДВАЛ */
 body > .note {
     padding: 0;
     margin: 0;
 }
-
 
 /* ЛЕГЕНДА */
 .legend {
@@ -34,18 +31,15 @@ body > .note {
     opacity: 0.1;
 }
 
-
 /* ДИАГРАММА */
 .container {
     position: relative;
 }
 
-
 /* ОСИ */
 .axis {
     shape-rendering: crispEdges;
 }
-
 
 /* Линии и засечки */
 .axis path,
@@ -53,19 +47,16 @@ body > .note {
     display: none;
 }
 
-
 /* Названия осей */
 .axis .label {
     font-family: Verdana;
     font-weight: bold;
 }
 
-
 /* Спрятанные засечки */
 .axis.hide .tick {
     display: none;
 }
-
 
 /* ВСПЛЫВАЮЩЕЕ ОКНО */
 .popup {
@@ -100,14 +91,12 @@ body > .note {
     padding-bottom: 5px;
 }
 
-
 /* Названия */
 .name {
     padding-left: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 
 /* Бары */
 .bar div {
@@ -120,14 +109,12 @@ body > .note {
     float: right;
 }
 
-
 /* Значения */
 .bar div .value {
     font-size: 10px;
     position: absolute;
     top: -10px;
 }
-
 
 /* ЭЛЕМЕНТЫ ДИАГРАММЫ */
 .authors text {
@@ -147,7 +134,6 @@ body > .note {
     display: none;
 }
 
-
 /* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ */
 .authors g.passive {
     opacity: 0.1;
@@ -157,7 +143,6 @@ body > .note {
 .authors g.active line.life {
     display: block;
 }
-
 
 /* ОТОБРАЖЕНИЕ ПРИ НАВЕДЕНИИ НА ГРУППУ В ЛЕГЕНДЕ */
 .authors g.group_choise > circle,
