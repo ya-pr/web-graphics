@@ -23,7 +23,7 @@ var GexfJS = {
     oldGraphZone: {},
     params: {
         centreX: 450,
-        centreY: 440,
+        centreY: 360,
         activeNode: -1,
         currentNode: -1
     },
@@ -31,7 +31,7 @@ var GexfJS = {
     minZoom: 0,
     maxZoom: 4,
     overviewWidth: 180,
-    overviewHeight: 170,
+    overviewHeight: 144,
     baseWidth: 900,
     baseHeight: 720,
     overviewScale: 0.2,
@@ -439,23 +439,12 @@ function loadGraph() {
                     _x = _pos.attr("x"),
                     _y = _pos.attr("y"),
                     _size = _n.find("viz\\:size,size").attr("value"),
-                    _col = _n.find("viz\\:color,color"),
-                    _r = _col.attr("r"),
-                    _g = _col.attr("g"),
-                    _b = _col.attr("b"),
                     _attr = _n.find("attvalue");
                 _d.coords = {
                     base: {
                         x: _deltax + _echelle * _x,
-                        y: _deltay - _echelle * _y,
+                        y: _deltay + _echelle * _y,
                         r: _echelle * _size
-                    }
-                };
-                _d.color = {
-                    rgb: {
-                        r: _r,
-                        g: _g,
-                        b: _b
                     }
                 };
                 _d.attributes = [];
@@ -465,13 +454,17 @@ function loadGraph() {
                     _d.attributes[_for ? _for : 'attribute_' + _a.attr("id")] = _a.attr("value");
                 });
                 if (_d.attributes.Type == 'S') {
-                    _d.color.base = "#4daad0";
-                    _d.color.gris = "rgba(77, 170, 208, 0.1)";
-                    _d.color.active = "#81c9e3";
+                    _d.color = {
+                        base: "#4daad0",
+                        gris: "rgba(77, 170, 208, 0.1)",
+                        active: "#81c9e3"
+                    };
                 } else {
-                    _d.color.base = "#f96421";
-                    _d.color.gris = "rgba(249, 100, 33, 0.1)";
-                    _d.color.active = "#fb861e";
+                    _d.color = {
+                        base: "#f96421",
+                        gris: "rgba(249, 100, 33, 0.1)",
+                        active: "#fb861e"
+                    };
                 }
                 GexfJS.graph.nodeIndexById.push(_id);
                 GexfJS.graph.nodeIndexByLabel.push(_label.toLowerCase());
@@ -595,8 +588,8 @@ function traceMap() {
     var _sizeFactor = GexfJS.echelleGenerale * Math.pow(GexfJS.echelleGenerale, -.15),
         _edgeSizeFactor = _sizeFactor * GexfJS.params.edgeWidthFactor,
         _nodeSizeFactor = _sizeFactor * GexfJS.params.nodeSizeFactor,
-        _textSizeFactor = 1,
-        _limTxt = 9;
+        _textSizeFactor = 4,
+        _limTxt = 12;
 
     GexfJS.ctxGraphe.clearRect(0, 0, GexfJS.graphZone.width, GexfJS.graphZone.height);
 
@@ -686,11 +679,11 @@ function traceMap() {
         var _d = GexfJS.graph.nodeList[i];
         if (_d.visible && _d.withinFrame) {
             if (i != _centralNode) {
-                var _fs = _d.coords.real.r * _textSizeFactor;
+                var _fs = Math.sqrt(_d.coords.real.r) * _textSizeFactor;
                 if (_fs > _limTxt) {
                     if (( i != GexfJS.params.activeNode ) && _tagsMisEnValeur.length && ( ( !_d.isTag ) || ( _centralNode != -1 ) )) {
                         if (_tagsMisEnValeur.length && !_d.isTag) {
-                            GexfJS.ctxGraphe.fillStyle = "rgba(60,60,60,0.3)"
+                            GexfJS.ctxGraphe.fillStyle = "rgba(0,0,0,0.1)"
                         } else {
                             GexfJS.ctxGraphe.fillStyle = "rgba(0,0,0,1)"
                         }
@@ -713,7 +706,7 @@ function traceMap() {
         GexfJS.ctxGraphe.arc(_dnc.coords.real.x, _dnc.coords.real.y, _dnc.coords.real.r, 0, Math.PI * 2, true);
         GexfJS.ctxGraphe.closePath();
         GexfJS.ctxGraphe.fill();
-        var _fs = _dnc.coords.real.r * _textSizeFactor;
+        var _fs = Math.max(Math.sqrt(_dnc.coords.real.r) * _textSizeFactor, _limTxt);
         GexfJS.ctxGraphe.font = Math.floor(_fs) + 'px "Textbook-light"';
         GexfJS.ctxGraphe.textAlign = "center";
         GexfJS.ctxGraphe.textBaseline = "middle";
