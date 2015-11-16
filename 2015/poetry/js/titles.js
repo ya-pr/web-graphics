@@ -45,9 +45,9 @@ d3.tsv("data/titles_data.tsv", function(data) {
         .orient("bottom")
         .ticks(6, "");
 
-    var yAxis = d3.svg.axis()
-        .scale(y)
-        .orient("left");
+    //var yAxis = d3.svg.axis()
+    //    .scale(y)
+    //    .orient("left");
 
     var bars = svg.append("g")
         .attr("class", "bars")
@@ -79,8 +79,9 @@ d3.tsv("data/titles_data.tsv", function(data) {
         .attr("class", "bg")
         .attr("height", y.rangeBand())
         .attr("x", 0)
-        .attr("width", function(d) {return x(100); });
-
+        .attr("width", function () {
+            return x(100);
+        });
     //добавляем поверх бэка цветные бары. с замедлением
 
     var timeForOneBar = 500;

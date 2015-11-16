@@ -1,4 +1,4 @@
-ymaps.ready(function() {
+ymaps.ready(function () {
     // Создаем карту
     var map = new ymaps.Map('YMapsID', {
         center: [55, 42],
@@ -19,7 +19,7 @@ ymaps.ready(function() {
         spring: {},
         summer: {},
         autumn: {},
-        winter: {},
+        winter: {}
     };
 
     for (var j = 0; j < seasons.length; j++) {
@@ -50,7 +50,7 @@ ymaps.ready(function() {
         buttons[j] = new ymaps.control.Button({
             data: {
                 content: labels[j],
-                value: collections[season],
+                value: collections[season]
             },
             options: {
                 selectOnClick: false,
@@ -68,7 +68,7 @@ ymaps.ready(function() {
     buttons[0].disable();
 
     // Загружаем модуль тепловой карты
-    ymaps.modules.require(['Heatmap'], function(Heatmap) {
+    ymaps.modules.require(['Heatmap'], function (Heatmap) {
         var heatmap = new Heatmap(collections.spring, {
             gradient: {
                 0.1: 'rgba(76, 187, 134, 0.7)',
@@ -83,14 +83,14 @@ ymaps.ready(function() {
         heatmap.setMap(map);
 
         // Поведение при нажатии на кнопку
-        buttons.forEach(function(butt) {
-            butt.events.add('click', function() {
-                val = butt.data.get('value');
+        buttons.forEach(function (butt) {
+            butt.events.add('click', function () {
+                var val = butt.data.get('value');
                 if (butt.state.get('enabled') === true) {
                     heatmap.setData(val);
                     butt.state.set('enabled', false);
                     butt.state.set('selected', true);
-                    buttons.forEach(function(other_butt) {
+                    buttons.forEach(function (other_butt) {
                         if (other_butt != butt) {
                             other_butt.state.set('enabled', true);
                             other_butt.state.set('selected', false);

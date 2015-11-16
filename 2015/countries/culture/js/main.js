@@ -31,10 +31,10 @@ svg.append("g")
     .selectAll("path")
     .data(chord.groups)
     .enter().append("path")
-    .style("fill", function(d) {
+    .style("fill", function (d) {
         return fill(d.index);
     })
-    .style("stroke", function(d) {
+    .style("stroke", function (d) {
         return fill(d.index);
     })
     .attr("d", d3.svg.arc().innerRadius(innerRadius).outerRadius(outerRadius))
@@ -48,20 +48,20 @@ var ticks = svg.append("g")
     .enter().append("g").selectAll("g")
     .data(groupTicks)
     .enter().append("g")
-    .attr("transform", function(d) {
+    .attr("transform", function (d) {
         return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + outerRadius + ",0)";
     });
 
 ticks.append("text")
     .attr("x", 8)
     .attr("dy", ".35em")
-    .attr("transform", function(d) {
+    .attr("transform", function (d) {
         return d.angle > Math.PI ? "rotate(180)translate(-16)" : null;
     })
-    .style("text-anchor", function(d) {
+    .style("text-anchor", function (d) {
         return d.angle > Math.PI ? "end" : null;
     })
-    .text(function(d) {
+    .text(function (d) {
         return d.label;
     });
 
@@ -71,14 +71,14 @@ svg.append("g")
     .data(chord.chords)
     .enter().append("path")
     .attr("d", d3.svg.chord().radius(innerRadius))
-    .style("fill", function(d) {
+    .style("fill", function (d) {
         return fill(d.target.index);
     })
     .style("opacity", 1);
 
 function groupTicks(d, i) {
     var k = (d.endAngle - d.startAngle) / d.value;
-    return d3.range(d.value / 2, d.value, d.value / 2).map(function(v) {
+    return d3.range(d.value / 2, d.value, d.value / 2).map(function (v) {
         return {
             angle: v * k + d.startAngle,
             label: names[i]
@@ -87,9 +87,9 @@ function groupTicks(d, i) {
 }
 
 function fade(opacity) {
-    return function(g, i) {
+    return function (g, i) {
         svg.selectAll(".chord path")
-            .filter(function(d) {
+            .filter(function (d) {
                 return d.source.index != i && d.target.index != i;
             })
             .transition()

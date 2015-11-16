@@ -127,7 +127,7 @@ var popup = d3.select('.popup')
 
 
 // ФУНКЦИЯ ДЛЯ ДОБАВЛЕНИЯ ТОПА ЗАПРОСОВ
-function add_top(data, d) {
+function add_top(data) {
     d3.select('.top_poems')
       .selectAll('p')
         .data(data.slice(0, 3)) // берём только три первых запроса
@@ -167,7 +167,7 @@ function add_top_poem(data) {
 // ЗАГРУЖАЕМ ДАННЫЕ
 d3.tsv("data/data_poems2.tsv", function(error, data) {
     // Преобразуем данные
-    data.forEach(function(d, i) {
+    data.forEach(function (d) {
         d.rating = +d.rating;
         d.writtenYear = +d.writtenYear;
         d.total = +d.total;
@@ -241,7 +241,9 @@ d3.tsv("data/data_poems2.tsv", function(error, data) {
             return "translate(" + (Math.floor(i / 4) * width_q) + "," + (i % 4 * height_legend_q + height_legend_q / 2) + ")";
         });
     legend_group.append("circle")
-        .attr("r", function(d) {return d3.round(circle_size_max / 2, 1); })
+        .attr("r", function () {
+            return d3.round(circle_size_max / 2, 1);
+        })
         .attr("fill", function(d) {return color(d); });
     legend_group.append("text")
         .attr("x", circle_size_max + 5)
@@ -310,7 +312,7 @@ d3.tsv("data/data_poems2.tsv", function(error, data) {
       .enter().append("g");
 
     // Круги
-    var poems_circles = poems.append("circle")
+    poems.append("circle")
         .attr("cx", function(d) {return x(d.writtenYear); })
         .attr("cy", function(d) {return y(d.rating); })
         .attr("r", function(d) {return size(d.total_sqrt); })
@@ -412,7 +414,7 @@ d3.tsv("data/data_poems2.tsv", function(error, data) {
     // ЗАГРУЖАЕМ ДАННЫЕ ПО ЗАПРОСАМ
     d3.tsv("data/data_poems_top_strings2.tsv", function(error, data_querys) {
         // Преобразуем данные
-        data_querys.forEach(function(d, i) {
+        data_querys.forEach(function (d) {
             d.string = '[' + d.string + ']';
         });
 
@@ -448,7 +450,7 @@ d3.tsv("data/data_poems2.tsv", function(error, data) {
             });
 
             // Вызываем функцию, добавляющую топ запросов
-            add_top(data_query, d);
+            add_top(data_query);
 
             // Прячем оси
             xAx.classed('hide', true);

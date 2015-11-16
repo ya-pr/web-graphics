@@ -60,8 +60,9 @@ var yAxis = d3.svg.axis()
 var line = d3.svg.line()
     .interpolate("monotone") //задаём сглаживание
     .y(function(d) { return y(d.share); })
-    .x(function(d, i) { return x(d.date); });
-
+    .x(function (d) {
+        return x(d.date);
+    });
 //добавляем svg
 var svg = d3.select(".chart").append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -93,9 +94,9 @@ axisy.append("text")
 d3.tsv("data/data_travel.tsv", function(error, data) {
     data.forEach(function(d) {
         d.share = 100 * d.share.replace(',', '.'); //переводим долю в понятный машине формат
-        d.month = d.month.replace(d.month, monthsChanger[d.month]) //меняем месяц на тот, что указан в локали
+        d.month = d.month.replace(d.month, monthsChanger[d.month]); //меняем месяц на тот, что указан в локали
         d.date = parseDate(d.year + d.month); //добавляем JS-дату, полученную из месяца и года
-    })
+    });
 
     x.domain(d3.extent(data, function(d) { return d.date; })); //определяем домен оси Х, он зависит от диапазона дат, которые у нас есть
 
@@ -107,8 +108,7 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
             .attr("dx", "-.95em") //смещаем немного левее, чтобы подпись была по центру
             .attr("y", 32) //и на тридцать пикселей ниже
             .text(i); //текст - номер года
-    };
-
+    }
     axisx.append("line")
         .attr("class", "line_bottom")
         .attr("x1", 0)
@@ -128,10 +128,10 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
 
     //для каждого города в отдельном объекте записываем снижение июнь к июню
     var annualDecrease = {};
-    nest.forEach(function(d) {annualDecrease[d.key] = d.values[17].share / d.values[5].share}) //внимание, номер месяца прибит гвоздями
+    nest.forEach(function(d) {annualDecrease[d.key] = d.values[17].share / d.values[5].share}); //внимание, номер месяца прибит гвоздями
 
     //в отдельный массив собираем все снижения
-    var allDecreases = []
+    var allDecreases = [];
     nest.forEach(function(d) {allDecreases.push(d.values[17].share / d.values[5].share)});
 
     //задаем ось с цветами
@@ -145,7 +145,7 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
 
     //добавлявем поведение кнопкам сортировки
     sortButtons = d3.selectAll('.sort-button')
-        .on('click', function(d) {
+        .on('click', function () {
             if (this.classList.contains('disabled')) { //клик срабатывает только на выключенной кнопке
                 if (this.classList.contains('alphabet')) {
                     nestedCitiesOnly.sort(function(a, b) {
@@ -155,17 +155,17 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
                     nestedCitiesOnly.sort(function(a, b) {
                         return d3.descending(annualDecrease[a.key], annualDecrease[b.key]); //кнопка по алфавиту сортирует nest по уменьшению снижения этого ключа, записанного в отдельном словаре
                     });
-                };
-                sortButtons.classed('disabled', true)
+                }
+                sortButtons.classed('disabled', true);
                 d3.select(this).classed('disabled', false); //у только что нажатой кнопки убираем класс "выключено"
                 renderCities(); //запускаем функцию отрисовки городов
-            };
+            }
         });
     //изначально сортировка по алфавиту включена, по интересу выключена
     d3.select('.interest').classed('disabled', true);
 
     //задаём поведение кнопки "очистить"
-    d3.select('.deselect').on('click', function(d) {
+    d3.select('.deselect').on('click', function () {
         clearLines(); //функция очистки
     });
 
@@ -201,8 +201,7 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
 
         //по умолчанию выбираем "всю Россию"
         changeChart.call(allRussiaButton[0][0], d3.select(allRussiaButton[0][0]).datum());
-    };
-
+    }
     //функция рисует кривые и задаёт поведение при наведении
     function changeChart(d) {
         //если город уже выбран, убираем его из selected и снимаем соответствующий класс с кнопки
@@ -213,8 +212,8 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
         } else {
         //если город не был выбран, то добавляем его в selected и вешаем на кнопку класс
             d3.select(this).classed('selected', true);
-            selected.push(d.key)};
-
+            selected.push(d.key)
+        }
         //запускаем функцию отрисовки линий
         drawLines();
 
@@ -234,8 +233,9 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
             activeButton = (activeButton[0].length == 0 ? allRussiaButton : activeButton); //если не нашли в cityButtons, значит это "вся Россия"
             activeButton
                 .classed('passive', false)
-                .style('color', function(d, i) {return color(annualDecrease[d.key]);});
-
+                .style('color', function (d) {
+                    return color(annualDecrease[d.key]);
+                });
             //сортировка: перекидываем выбранный город в конец selected и сортируем линии в соответствии с selected
             selected.splice(selected.indexOf(activeLine.datum().key),1);
             selected.push(activeLine.datum().key);
@@ -269,8 +269,9 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
 
                 var activeButton = d3.select(this)
                     .classed('passive', false)
-                    .style('color', function(d, i) {return color(annualDecrease[d.key]);});
-
+                    .style('color', function (d) {
+                        return color(annualDecrease[d.key]);
+                    });
                 var activeLine = lines.filter(function(line_data) {
                     return line_data.key === activeButton.datum().key;
                 })
@@ -281,7 +282,7 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
                 d3.select('.lines').selectAll('.line-share').sort(function(a,b) {
                     return d3.ascending(selected.indexOf(a.key), selected.indexOf(b.key))
                 })
-            };
+            }
         });
 
         //поведение при mouseout с города
@@ -291,8 +292,7 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
             allRussiaButton.classed('passive', false);
             lines.classed('passive', false);
         });
-    };
-
+    }
     //функция рисует кривые и обновляет их в соответствии со списком выбранных городов
     function drawLines() {
         //собираем данные только по тем городам, которые сейчас selected
@@ -342,7 +342,9 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
             .attr('class', 'line-hover-area');
         // 2 - видимая линия
         lineGroups.append('path')
-            .style('stroke', function(d, i) {return color(annualDecrease[d.key]);})
+            .style('stroke', function (d) {
+                return color(annualDecrease[d.key]);
+            })
             .attr('d', function(d) {return line(d.values);})
             .attr('class', 'line-narrow');
 
@@ -355,13 +357,11 @@ d3.tsv("data/data_travel.tsv", function(error, data) {
             .duration(300)
             .style('opacity', 0)
             .remove();
-    };
-
+    }
     //функция очистки графика
     function clearLines() {
         selected = []; //очищаем  selected
         d3.selectAll('.line-share').remove(); //удаляем все line-share
         d3.selectAll('.city-button').classed('selected', false); //убираем с кнопок класс selected
-    };
-
+    }
 });

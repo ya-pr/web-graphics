@@ -1,11 +1,11 @@
-ymaps.ready(function() {
+ymaps.ready(function () {
     var layerName = "user#layer";
     var zoomRange = [2, 4];
-    var Layer = function() {
+    var Layer = function () {
         var layer = new ymaps.Layer("../../../img/background.png", {
             notFoundTile: "../../../img/background.png"
         });
-        layer.getZoomRange = function() {
+        layer.getZoomRange = function () {
             return ymaps.vow.resolve(zoomRange);
         };
         return layer;
@@ -34,7 +34,7 @@ ymaps.ready(function() {
         lang: 'ru',
         quality: 0,
         type: 'coast'
-    }, function(geoJson) {
+    }, function (geoJson) {
         var regions = ymaps.geoQuery(geoJson).setOptions({
             fillColor: 'ffffff',
             strokeColor: 'ffffff',
@@ -43,14 +43,9 @@ ymaps.ready(function() {
         jQuery.ajax({
             url: 'data/colors.min.json',
             dataType: 'json'
-        }).then(function(data) {
-            var listBox = new ymaps.control.ListBox({
-                data: {
-                    content: 'Выбрать регион'
-                }
-            });
-            data.forEach(function(country) {
-                var res = regions.search(function(region) {
+        }).then(function (data) {
+            data.forEach(function (country) {
+                regions.search(function (region) {
                     return region.properties.get('properties.iso3166') == country.id;
                 }).setOptions({
                     fillColor: country.color + ""

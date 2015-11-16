@@ -4,7 +4,6 @@ body {
     font-size: 11px;
 }
 
-
 /* ЗАГОЛОВОК */
 body > .title {
     margin-bottom: 8px;
@@ -12,13 +11,11 @@ body > .title {
     font-kerning: none;
 }
 
-
 /* ПОДВАЛ */
 body > .note {
     padding: 0;
     margin: 0;
 }
-
 
 /*ОСИ*/
 .axis {
@@ -40,7 +37,6 @@ body > .note {
     shape-rendering: crispEdges;
 }
 
-
 /*ТЕКСТ*/
 
 /*на баре*/
@@ -49,7 +45,6 @@ body > .note {
     display: none;
     fill: white;
 }
-
 
 /*слева*/
 .label_name {
@@ -62,7 +57,6 @@ body > .note {
     fill: grey;
 }
 
-
 /*Наведение на бар*/
 .author {
     cursor: pointer;
@@ -71,7 +65,6 @@ body > .note {
 .author:hover .label {
     display: block;
 }
-
 
 /*ЛЕГЕНДА*/
 .big_legend {
