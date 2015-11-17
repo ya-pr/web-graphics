@@ -360,6 +360,7 @@ function onGraphScroll(evt, delta) {
         }
         GexfJS.totalScroll = 0;
     }
+    evt.preventDefault();
 }
 
 function initializeMap() {
