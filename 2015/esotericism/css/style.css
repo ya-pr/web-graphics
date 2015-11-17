@@ -1,0 +1,24 @@
+body {
+    font-family: "Textbook-regular", Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+.header {
+    font-family: "Textbook-bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 2em;
+}
+
+.caption {
+    font-family: "Textbook-Light", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+    color: #555150;
+    margin-top: 2em;
+}
