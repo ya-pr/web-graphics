@@ -29,7 +29,7 @@ var GexfJS = {
     },
     oldParams: {},
     minZoom: 0,
-    maxZoom: 4,
+    maxZoom: 8,
     overviewWidth: 180,
     overviewHeight: 144,
     baseWidth: 900,
@@ -185,6 +185,23 @@ var GexfJS = {
     },
     lang: "ru"
 };
+
+colors = [
+    ['#ff0000', '#e70622'],
+    ['#59b2d7', '#40a1c7'],
+    ['#42c187', '#30a96c'],
+    ['#9d62a9', '#763d83'],
+    ['#fb861e', '#f96a21'],
+    ['#f32955', '#d7163c'],
+    ['#844f69', '#622242'],
+    ['#ffcb00', '#ffb922'],
+    ['#1e95a9', '#13788d']
+];
+
+function hexToRgb(hex) {
+    var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? [parseInt(result[1], 16), parseInt(result[2], 16), parseInt(result[3], 16)] : null;
+}
 
 function strLang(_str) {
     var _l = GexfJS.i18n[GexfJS.lang];
@@ -363,6 +380,21 @@ function onGraphScroll(evt, delta) {
     evt.preventDefault();
 }
 
+function onGraphDblclick(evt) {
+    if (GexfJS.params.zoomLevel < GexfJS.maxZoom) {
+        GexfJS.params.zoomLevel++;
+        GexfJS.echelleGenerale = Math.pow(Math.SQRT2, GexfJS.params.zoomLevel);
+        var _el = $(this),
+            _off = $(this).offset(),
+            _deltaX = evt.pageX - _el.width() / 2 - _off.left,
+            _deltaY = evt.pageY - _el.height() / 2 - _off.top;
+        GexfJS.params.centreX += ( Math.SQRT2 - 1 ) * _deltaX / GexfJS.echelleGenerale;
+        GexfJS.params.centreY += ( Math.SQRT2 - 1 ) * _deltaY / GexfJS.echelleGenerale;
+        $("#zoomSlider").slider("value", GexfJS.params.zoomLevel);
+    }
+    evt.preventDefault();
+}
+
 function initializeMap() {
     clearInterval(GexfJS.timeRefresh);
     GexfJS.oldParams = {};
@@ -421,7 +453,6 @@ function loadGraph() {
                 _ymin = Math.min(_y, _ymin);
                 _ymax = Math.max(_y, _ymax);
             });
-
             var _echelle = Math.min(( GexfJS.baseWidth - _marge ) / ( _xmax - _xmin ), ( GexfJS.baseHeight - _marge ) / ( _ymax - _ymin ));
             var _deltax = ( GexfJS.baseWidth - _echelle * ( _xmin + _xmax ) ) / 2;
             var _deltay = ( GexfJS.baseHeight - _echelle * ( _ymin + _ymax ) ) / 2;
@@ -440,6 +471,10 @@ function loadGraph() {
                     _x = _pos.attr("x"),
                     _y = _pos.attr("y"),
                     _size = _n.find("viz\\:size,size").attr("value"),
+                    //_col = _n.find("viz\\:color,color"),
+                    //_r = _col.attr("r"),
+                    //_g = _col.attr("g"),
+                    //_b = _col.attr("b"),
                     _attr = _n.find("attvalue");
                 _d.coords = {
                     base: {
@@ -448,25 +483,27 @@ function loadGraph() {
                         r: _echelle * _size
                     }
                 };
+                //_d.color = {
+                //    rgb: {
+                //        r: _r,
+                //        g: _g,
+                //        b: _b
+                //    },
+                //    base : "rgba(" + _r + "," + _g + "," + _b + ",.7)",
+                //    gris : "rgba(" + Math.floor(84 + .33 * _r) + "," + Math.floor(84 + .33 * _g) + "," + Math.floor(84 + .33 * _b) + ",.5)",
+                //    active : "rgba(" + _r + "," + _g + "," + _b + ",1)"
+                //};
                 _d.attributes = [];
                 $(_attr).each(function () {
                     var _a = $(this),
                         _for = _a.attr("for");
                     _d.attributes[_for ? _for : 'attribute_' + _a.attr("id")] = _a.attr("value");
                 });
-                if (_d.attributes.Type == 'S') {
-                    _d.color = {
-                        base: "#4daad0",
-                        gris: "rgba(77, 170, 208, 0.1)",
-                        active: "#81c9e3"
-                    };
-                } else {
-                    _d.color = {
-                        base: "#f96421",
-                        gris: "rgba(249, 100, 33, 0.1)",
-                        active: "#fb861e"
-                    };
-                }
+                _d.color = {
+                    base : colors[_d.attributes.class][0],
+                    gris : "rgba(" + hexToRgb(colors[_d.attributes.class][0]).join() + ",.05)",
+                    active : colors[_d.attributes.class][1]
+                };
                 GexfJS.graph.nodeIndexById.push(_id);
                 GexfJS.graph.nodeIndexByLabel.push(_label.toLowerCase());
                 GexfJS.graph.nodeList.push(_d);
@@ -589,7 +626,7 @@ function traceMap() {
     var _sizeFactor = GexfJS.echelleGenerale * Math.pow(GexfJS.echelleGenerale, -.15),
         _edgeSizeFactor = _sizeFactor * GexfJS.params.edgeWidthFactor,
         _nodeSizeFactor = _sizeFactor * GexfJS.params.nodeSizeFactor,
-        _textSizeFactor = 4,
+        _textSizeFactor = 5,
         _limTxt = 12;
 
     GexfJS.ctxGraphe.clearRect(0, 0, GexfJS.graphZone.width, GexfJS.graphZone.height);
@@ -684,7 +721,7 @@ function traceMap() {
                 if (_fs > _limTxt) {
                     if (( i != GexfJS.params.activeNode ) && _tagsMisEnValeur.length && ( ( !_d.isTag ) || ( _centralNode != -1 ) )) {
                         if (_tagsMisEnValeur.length && !_d.isTag) {
-                            GexfJS.ctxGraphe.fillStyle = "rgba(0,0,0,0.1)"
+                            GexfJS.ctxGraphe.fillStyle = "rgba(0,0,0,0.05)"
                         } else {
                             GexfJS.ctxGraphe.fillStyle = "rgba(0,0,0,1)"
                         }
@@ -867,7 +904,8 @@ $(document).ready(function () {
             GexfJS.mousePosition = null;
             endMove();
         })
-        .mousewheel(onGraphScroll);
+        .mousewheel(onGraphScroll)
+        .dblclick(onGraphDblclick);
     $("#overview")
         .mousemove(onOverviewMove)
         .mousedown(startMove)
