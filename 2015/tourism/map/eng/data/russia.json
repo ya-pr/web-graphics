@@ -1,0 +1,186 @@
+[
+  {
+    "name": "Argentina",
+    "lat": -35.1949,
+    "lon": -65.102,
+    "weight": 0.05,
+    "level1": null
+  },
+  {
+    "name": "Brazil",
+    "lat": -10.7765,
+    "lon": -53.069,
+    "weight": 0.17,
+    "level1": [
+      {
+        "name": "Brazil",
+        "weight": 0.13,
+        "level2": null
+      },
+      {
+        "name": "Rio de Janeiro",
+        "weight": 0.04,
+        "level2": null
+      }
+    ]
+  },
+  {
+    "name": "Dominican Republic",
+    "lat": 18.8973,
+    "lon": -70.5,
+    "weight": 0.4,
+    "level1": [
+      {
+        "name": "Dominican Republic",
+        "weight": 0.27,
+        "level2": null
+      },
+      {
+        "name": "Punta Cana",
+        "weight": 0.13,
+        "level2": null
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "lat": 62.5367,
+    "lon": -96.3924,
+    "weight": 0.1,
+    "level1": null
+  },
+  {
+    "name": "Costa Rica",
+    "lat": 9.9748,
+    "lon": -84.1939,
+    "weight": 0.03,
+    "level1": null
+  },
+  {
+    "name": "Cuba",
+    "lat": 21.6105,
+    "lon": -78.9603,
+    "weight": 0.51,
+    "level1": [
+      {
+        "name": "Cuba",
+        "weight": 0.38,
+        "level2": null
+      },
+      {
+        "name": "Varadero",
+        "weight": 0.09,
+        "level2": null
+      },
+      {
+        "name": "Havana",
+        "weight": 0.04,
+        "level2": null
+      }
+    ]
+  },
+  {
+    "name": "Mexico",
+    "lat": 23.9405,
+    "lon": -102.5263,
+    "weight": 0.25,
+    "level1": [
+      {
+        "name": "Mexico",
+        "weight": 0.19,
+        "level2": null
+      },
+      {
+        "name": "Cancun",
+        "weight": 0.06,
+        "level2": null
+      }
+    ]
+  },
+  {
+    "name": "Peru",
+    "lat": -9.1713,
+    "lon": -74.3568,
+    "weight": 0.05,
+    "level1": null
+  },
+  {
+    "name": "USA",
+    "lat": 39.4959,
+    "lon": -98.99,
+    "weight": 0.88,
+    "level1": [
+      {
+        "name": "USA",
+        "weight": 0.43,
+        "level2": null
+      },
+      {
+        "name": "California",
+        "weight": 0.13,
+        "level2": [
+          {
+            "name": "California",
+            "weight": 0.07
+          },
+          {
+            "name": "Los Angeles",
+            "weight": 0.06
+          }
+        ]
+      },
+      {
+        "name": "Mariana islands",
+        "weight": 0.04,
+        "level2": null
+      },
+      {
+        "name": "Nevada",
+        "weight": 0.04,
+        "level2": [
+          {
+            "name": "Nevada",
+            "weight": 0.01
+          },
+          {
+            "name": "Las Vegas",
+            "weight": 0.03
+          }
+        ]
+      },
+      {
+        "name": "New York",
+        "weight": 0.16,
+        "level2": null
+      },
+      {
+        "name": "Florida",
+        "weight": 0.08,
+        "level2": [
+          {
+            "name": "Florida",
+            "weight": 0.02
+          },
+          {
+            "name": "Miami",
+            "weight": 0.06
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chile",
+    "lat": -35.2967,
+    "lon": -71.2281,
+    "weight": 0.04,
+    "level1": null
+  },
+  {
+    "name": "Jamaica",
+    "lat": 18.1578,
+    "lon": -77.3112,
+    "weight": 0.04,
+    "level1": null
+  }
+]
