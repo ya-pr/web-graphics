@@ -5,6 +5,7 @@
   - [Карта сходства туристических направлений](2015/tourism/force/index.html)
   - [Изменение интереса к туризму и путешествиям в российских городах-миллионерах](2015/tourism/interest/index.html)
   - [Популярность туристических направлений в разных городах России](2015/tourism/map/index.html)
+  - [Popularity of American Tourist Destinations](2015/tourism/map/eng/index.html)
   - [Как изменились формулировки туристических запросов по сравнению с прошлым годом](2015/tourism/table/index.html)
   - [How wording for tourism queries has changed compared to the previous year](2015/tourism/table/eng.html)
   - [50 самых частотных слов и словосочетаний в туристических запросах](2015/tourism/tagcloud/index.html)
