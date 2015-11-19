@@ -26,3 +26,20 @@
   - [Примеры частых сочетаний глаголов и существительных, встречающихся в запросах с условиями математических задач](2015/school_tasks_examples/index.html)
 - Эзотерика в поиске Яндекса
   - [Карта слов из запросов на эзотерические темы](2015/esotericism/index.html)
+- Такси
+  - Распределение поездок на такси по дням недели и часам
+    - [Москва](2015/taxi/1_daytime/moscow.html)
+    - [Санкт-Петербург](2015/taxi/1_daytime/spb.html)
+    - [Екатеринбург](2015/taxi/1_daytime/ekaterinburg.html)
+  - Тепловая карта заказов
+    - [Москва](2015/taxi/2_price/moscow.html)
+    - [Санкт-Петербург](2015/taxi/2_price/spb.html)
+    - [Екатеринбург](2015/taxi/2_price/ekaterinburg.html)
+  - Стоимость одной минуты в пути и дистанция поездки по часам
+    - [Москва](2015/taxi/3_map/1_moscow/index.html)
+    - [Санкт-Петербург](2015/taxi/3_map/2_spb/index.html)
+    - [Екатеринбург](2015/taxi/3_map/3_ekaterinburg/index.html)
+  - Самые популярные марки машин в московских таксопарках
+    - [Москва](2015/taxi/4_topcars/moscow.html)
+    - [Санкт-Петербург](2015/taxi/4_topcars/spb.html)
+    - [Екатеринбург](2015/taxi/4_topcars/ekaterinburg.html)
