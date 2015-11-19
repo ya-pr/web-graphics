@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Поездки по дням недели и часам</title>
+    <link rel="stylesheet" href="../../../css/normalize.css">
+    <link rel="stylesheet" href="../../../css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="header">Распределение поездок на такси по дням недели и часам</div>
+<div id="subheader">Количество заказов в процентах. За 100% принято среднее число поездок в час с 09:00 до 18:00 в
+    будни
+</div>
+<div id="infopane">Понедельник, c 00:00 до 01:00 — <span>25%</span></div>
+<div id="content"></div>
+<div id="caption">По данным Яндекс.Такси, сентябрь 2015</div>
+
+<script src="../../../js/d3.v3.min.js"></script>
+<script>
+    var data_file_name = "data/spb.tsv";
+</script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+.axis path,
+.x.axis line {
+    display: none;
+}
+
+.y.axis line {
+    stroke: black;
+    stroke-width: .3px;
+    opacity: .3;
+    display: block;
+}
+
+.x.axis .line-bottom {
+    stroke: black;
+    stroke-width: 2.5px;
+    display: block;
+}
+
+.x.axis .hour-tick {
+    stroke: #FFBA23;
+    stroke-width: 2px;
+    display: block;
+}
+
+.axis text, .hour, .day {
+    font-size: 12.5px;
+    text-transform: uppercase;
+}
+
+body {
+    width: 710px;
+    height: 500px;
+    font-size: 62.5%;
+    font-family: "TextbookNew-Regular", Arial, sans-serif;
+    position: absolute;
+}
+
+#header {
+    font-family: "TextbookNew-Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: black;
+    letter-spacing: .04em;
+}
+
+#subheader {
+    font-family: "TextbookNew-Regular", Arial, sans-serif;
+    font-size: 1.25em;
+    color: #555150;
+    padding-top: 10px;
+}
+
+#infopane {
+    position: absolute;
+    top: 60px;
+    left: 240px;
+    width: 250px;
+    height: 25px;
+    font-size: 1.25em;
+    font-family: "TextbookNew-Regular", Arial, sans-serif;
+    color: #4c5e6c;
+    text-align: center;
+}
+
+#infopane span {
+    color: #FFBA23;
+}
+
+.x .tick {
+    display: none;
+}
+
+.rect {
+    fill: #FFBA23;
+}
+
+.box:hover .rect {
+    fill: #4c5e6c;
+}
+
+.box:hover .popup {
+    display: block;
+}
+
+.hour {
+    fill: #FFBA23;
+}
+
+#caption {
+    font-family: "TextbookNew-Light", Arial, sans-serif;
+    text-transform: uppercase;
+    color: #555150;
+    margin-top: 2em;
+    letter-spacing: .04em;
+    font-size: 1em;
+    position: absolute;
+    bottom: 0;
+}
