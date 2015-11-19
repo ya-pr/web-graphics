@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 890px;
+    height: 710px;
+    font-size: 62.5%;
+    font-family: "TextbookNew-Regular", Arial, sans-serif;
+}
+
+#header {
+    font-family: "TextbookNew-Bold", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: .04em;
+}
+
+#content {
+    position: relative;
+    width: 890px;
+    height: 710px;
+}
+
+#YMapsID {
+    width: 890px;
+    height: 625px;
+    margin: 10px 0;
+}
+
+#infopane {
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    width: 290px;
+    height: 470px;
+    background-color: rgba(255, 255, 255, .9);
+    font-family: "TextbookNew-Regular", Arial, sans-serif;
+    font-size: 1.25em;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, .15);
+    border-radius: 3px;
+    border: 1px solid rgba(203, 203, 203, .5);
+}
+
+#hour-selector {
+    width: 250px;
+    display: inline-block;
+    margin: 10px 0 25px 0;
+}
+
+#start-hour, #end-hour, #cur-hour {
+    position: absolute;
+    display: inline-block;
+    width: 50%;
+    height: 10px;
+    top: 60px;
+}
+
+#start-hour {
+    left: 0;
+}
+
+#end-hour {
+    text-align: right;
+    right: 0;
+}
+
+#buttons {
+    height: 120px;
+    width: 250px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.button {
+    width: 120px;
+    height: 28px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#pt-sb, #from {
+    margin-right: 8px;
+}
+
+#time, #cost {
+    display: inline-block;
+    font-size: 20px;
+    width: 80px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+#top-header {
+    font-family: "TextbookNew-Bold", Arial, sans-serif;
+}
+
+ol {
+    margin-top: 5px;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: .15em;
+}
+
+#caption {
+    font-family: "TextbookNew-Light", Arial, sans-serif;
+    color: #555150;
+    margin-top: 2em;
+    letter-spacing: .04em;
+    font-size: 1.25em;
+    position: absolute;
+    bottom: 0;
+}
