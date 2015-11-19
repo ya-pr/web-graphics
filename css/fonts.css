@@ -5,13 +5,31 @@
 }
 
 @font-face {
+    font-family: "TextbookNew-Light";
+    src: local('Textbook New Light'), local('TextbookNew-Light');
+    src: url('../fonts/TBN45.otf');
+}
+
+@font-face {
     font-family: "Textbook-regular";
     src: local('Textbook New'), local('TextbookNew');
     src: url('../fonts/TBN55.otf');
 }
 
 @font-face {
+    font-family: "TextbookNew-Regular";
+    src: local('Textbook New'), local('TextbookNew');
+    src: url('../fonts/TBN55.otf');
+}
+
+@font-face {
     font-family: "Textbook-bold";
+    src: local('Textbook New Bold'), local('TextbookNew-Bold');
+    src: url('../fonts/TBN75.otf');
+}
+
+@font-face {
+    font-family: "TextbookNew-Bold";
     src: local('Textbook New Bold'), local('TextbookNew-Bold');
     src: url('../fonts/TBN75.otf');
 }
