@@ -59,6 +59,10 @@ body {
     top: 60px;
 }
 
+#cur-hour {
+    width: 3em;
+}
+
 #start-hour {
     left: 0;
 }
