@@ -19,11 +19,12 @@ body {
 
 #pic {
     position: relative;
+/*     height: 720px; */
 }
 
 #zonecentre {
 /*     width: 900px; */
-    height: 720px;
+/*     height: 720px; */
     overflow: hidden;
 }
 
@@ -50,8 +51,8 @@ body {
     text-align: center;
 }
 
-#zoomMinusButton,
 #zoomPlusButton,
+#zoomMinusButton,
 #edgesButton {
     display: block;
     background-color: white;
@@ -73,6 +74,42 @@ body {
 
 #edgesButton {
     background: url(../../../img/links.svg);
+}
+
+/* Class buttons */
+
+#ctlclass {
+    position: absolute;
+/*     left: 5px; */
+/*     top: 5px; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+#ctlclass li {
+    padding: 0;
+/*     margin: 10px 0; */
+/*     width: 29em; */
+}
+
+#ctlclass li a {
+    display: block;
+    cursor: pointer;
+/*     height: 1.5em; */
+    margin-bottom: 3px;
+}
+
+#ctlclass li #\31 {
+/*     color: #59b2d7; */
+}
+
+#ctlclass li #\33  {
+/*     color: #9d62a9; */
 }
 
 /* EN BAS A GAUCHE */
