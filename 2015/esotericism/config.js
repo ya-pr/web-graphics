@@ -45,11 +45,12 @@ setParams({
      Show the weight of edges in the list
      this setting can't be changed from the User Interface
      */
-    language: 'ru'
+    language: 'ru',
     /*
      Set to an ISO language code to switch the interface to that language.
      Available languages are English [en], French [fr], Spanish [es],
      Italian [it], Finnish [fi], Turkish [tr] and Greek [el].
      If set to false, the language will be that of the user's browser.
      */
+    class: null
 });
