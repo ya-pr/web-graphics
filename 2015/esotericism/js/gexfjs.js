@@ -461,7 +461,6 @@ function traceMap() {
     GexfJS.ctxGraphe.clearRect(0, 0, GexfJS.graphZone.width, GexfJS.graphZone.height);
 
     if (!GexfJS.params.class) {
-
         var _centralNode = ( ( GexfJS.params.activeNode != -1 ) ? GexfJS.params.activeNode : GexfJS.params.currentNode );
 
         for (var i in GexfJS.graph.nodeList) {
@@ -634,6 +633,28 @@ function traceMap() {
             }
         }
 
+        var _centralNode = GexfJS.params.activeNode;
+        if (_centralNode != -1) {
+            var _dnc = GexfJS.graph.nodeList[_centralNode];
+            _dnc.coords.real = ( (GexfJS.params.useLens && GexfJS.mousePosition ) ? calcCoord(GexfJS.mousePosition.x, GexfJS.mousePosition.y, _dnc.coords.actual) : _dnc.coords.actual );
+            GexfJS.ctxGraphe.fillStyle = _dnc.color.active;
+            GexfJS.ctxGraphe.beginPath();
+            GexfJS.ctxGraphe.arc(_dnc.coords.real.x, _dnc.coords.real.y, _dnc.coords.real.r, 0, Math.PI * 2, true);
+            GexfJS.ctxGraphe.closePath();
+            GexfJS.ctxGraphe.fill();
+            var _fs = Math.max(Math.sqrt(_dnc.coords.real.r) * _textSizeFactor, _limTxt);
+            GexfJS.ctxGraphe.font = Math.floor(_fs) + 'px "Textbook-light"';
+            GexfJS.ctxGraphe.textAlign = "center";
+            GexfJS.ctxGraphe.textBaseline = "middle";
+            GexfJS.ctxGraphe.fillStyle = "rgba(55,55,55,0)";
+            GexfJS.ctxGraphe.fillText(_dnc.label, _dnc.coords.real.x - 2, _dnc.coords.real.y);
+            GexfJS.ctxGraphe.fillText(_dnc.label, _dnc.coords.real.x + 2, _dnc.coords.real.y);
+            GexfJS.ctxGraphe.fillText(_dnc.label, _dnc.coords.real.x, _dnc.coords.real.y - 2);
+            GexfJS.ctxGraphe.fillText(_dnc.label, _dnc.coords.real.x, _dnc.coords.real.y + 2);
+            GexfJS.ctxGraphe.fillStyle = "rgb(0,0,0)";
+            GexfJS.ctxGraphe.fillText(_dnc.label, _dnc.coords.real.x, _dnc.coords.real.y);
+        }
+
         GexfJS.ctxMini.putImageData(GexfJS.imageMini, 0, 0);
         var _r = GexfJS.overviewScale / GexfJS.echelleGenerale,
             _x = -_r * GexfJS.decalageX,
@@ -723,7 +744,6 @@ $(document).ready(function () {
     var classbuttons = $("#ctlclass");
     classbuttons.children().click(function (event) {
         GexfJS.params.class = event.target.id;
-        console.log(GexfJS.params.class);
     });
     $("#edgesButton").click(function () {
         GexfJS.params.showEdges = !GexfJS.params.showEdges;
