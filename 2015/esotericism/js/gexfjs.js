@@ -111,6 +111,8 @@ function strLang(_str) {
 function displayNode(_nodeIndex, _recentre) {
     GexfJS.params.currentNode = _nodeIndex;
     GexfJS.params.class = null;
+    var classbuttons = $("#ctlclass");
+    classbuttons.children().find("a").removeClass("highlight");
 }
 
 function updateWorkspaceBounds() {
@@ -744,6 +746,8 @@ $(document).ready(function () {
     var classbuttons = $("#ctlclass");
     classbuttons.children().click(function (event) {
         GexfJS.params.class = event.target.id;
+        classbuttons.children().find("a").removeClass("highlight");
+        $(event.target).addClass("highlight");
     });
     $("#edgesButton").click(function () {
         GexfJS.params.showEdges = !GexfJS.params.showEdges;
