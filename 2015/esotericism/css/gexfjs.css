@@ -118,6 +118,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a.highlight {
     color: #000000;
 }
