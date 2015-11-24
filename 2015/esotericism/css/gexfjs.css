@@ -7,7 +7,7 @@
   * */
 
 body {
-    font-family: "Textbook-light", Helvetica, Arial, sans-serif;
+    font-family: "Textbook-light", Arial, sans-serif;
     font-size: 12px;
 }
 
@@ -19,12 +19,9 @@ body {
 
 #pic {
     position: relative;
-/*     height: 720px; */
 }
 
 #zonecentre {
-/*     width: 900px; */
-/*     height: 720px; */
     overflow: hidden;
 }
 
@@ -80,37 +77,32 @@ body {
 
 #ctlclass {
     position: absolute;
-/*     left: 5px; */
-/*     top: 5px; */
     list-style: none;
-    padding: 0;
     margin: 0;
     background-color: rgba(255,255,255,0.6);
     border: 1px solid #aaa;
     border-radius: 3px;
-    padding: 4px;
-}
-
-#ctlclass li {
-    padding: 0;
-/*     margin: 10px 0; */
-/*     width: 29em; */
+    padding: 5px;
 }
 
 #ctlclass li a {
     display: block;
+    font-family: "Textbook-regular", Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: 0.04em;
     cursor: pointer;
-/*     height: 1.5em; */
+    height: 1.5em;
     margin-bottom: 3px;
 }
 
-#ctlclass li #\31 {
-/*     color: #59b2d7; */
+/* #ctlclass li #\31 {
+    color: #59b2d7;
 }
 
 #ctlclass li #\33  {
-/*     color: #9d62a9; */
-}
+    color: #9d62a9;
+} */
 
 /* EN BAS A GAUCHE */
 
@@ -121,56 +113,11 @@ body {
     border: 2px solid #000;
 }
 
-/* ZONE GAUCHE */
-
-div.largepill {
-    float: left;
-    width: 16px;
-    height: 16px;
-    border-radius: 8px;
-    margin: 0 5px 0 0;
-}
-
-div.smallpill {
-    float: left;
-    width: 12px;
-    height: 12px;
-    border-radius: 6px;
-    margin: 0 5px 0 0;
-}
-
-#leftcontent h3 {
-    font-size: 16px;
-}
-
-#leftcontent h4 {
-    font-size: 14px;
-}
-
-#leftcontent h3,
-#leftcontent h4,
-#leftcontent p,
-#leftcontent ul {
-    margin: 5px;
-}
-
-#leftcontent ul {
-    list-style: none;
-    padding: 0;
-}
-
-#leftcontent li {
-    margin: 2px 0;
-    padding: 0;
-    font-size: 12px;
-}
-
 a {
-    color: #06a8de;
-    font-weight: bold;
+    color: #555150;
     text-decoration: none;
 }
 
 a:hover {
-    color: #000080;
+    color: #000000;
 }
