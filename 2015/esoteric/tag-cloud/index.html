@@ -1,48 +1,318 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title></title>
-	<style>
-		* {
-		  box-sizing: border-box;
-		}
-		@font-face {
-		  font-family: "Textbook-light";
-		  src: url('../../../fonts/TBN45.otf');
-		}
-		@font-face {
-		  font-family: "Textbook-regular";
-		  src: url('../../../fonts/TBN55.otf');
-		}
-		@font-face {
-		  font-family: "Textbook-bold";
-		  src: url('../../../fonts/TBN75.otf');
-		}
-		html {
-		  width: 730px;
-		  height: 400px;
-		}
-		body {
-			width: 730px;
-			height: 400px;
-		  font-size: 62.5%;
-		}
-
-		svg {
-			width: 720px;
-			height: 400px;
-		}
-
-		text {
-			font-family: "Textbook-regular" !important;
-}
-	</style>
-	<link rel="stylesheet" href="css/normalize.css">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../../../css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="../../../css/fonts.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-	<div class="content">
-		<svg height="400" width="720"><g transform="translate(340,200)"><text style="font-size: 90px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-47,57)rotate(0)" text-anchor="middle">гороскоп</text><text style="font-size: 69px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(49,-18)rotate(0)" text-anchor="middle">год</text><text style="font-size: 68px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-133,-14)rotate(0)" text-anchor="middle">сонник</text><text style="font-size: 55px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-77,101)rotate(0)" text-anchor="middle">имя</text><text style="font-size: 53px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-156,-69)rotate(0)" text-anchor="middle">гадание</text><text style="font-size: 51px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(71,-67)rotate(0)" text-anchor="middle">онлайн</text><text style="font-size: 51px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(9,-104)rotate(0)" text-anchor="middle">сон</text><text style="font-size: 49px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(34,-141)rotate(0)" text-anchor="middle">ноябрь</text><text style="font-size: 46px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(67,93)rotate(0)" text-anchor="middle">сегодня</text><text style="font-size: 44px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-216,100)rotate(0)" text-anchor="middle">сниться</text><text style="font-size: 44px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(209,-30)rotate(0)" text-anchor="middle">календарь</text><text style="font-size: 41px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(15,126)rotate(0)" text-anchor="middle">знак</text><text style="font-size: 39px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-102,133)rotate(0)" text-anchor="middle">зодиак</text><text style="font-size: 38px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-125,-111)rotate(0)" text-anchor="middle">бесплатно</text><text style="font-size: 38px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-185,-146)rotate(0)" text-anchor="middle">совместимость</text><text style="font-size: 37px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(205,12)rotate(0)" text-anchor="middle">лунный</text><text style="font-size: 36px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(144,127)rotate(0)" text-anchor="middle">значение</text><text style="font-size: 31px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(154,-115)rotate(0)" text-anchor="middle">женщина</text><text style="font-size: 29px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(190,-83)rotate(0)" text-anchor="middle">день</text><text style="font-size: 29px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-217,123)rotate(0)" text-anchor="middle">завтра</text><text style="font-size: 29px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(211,49)rotate(0)" text-anchor="middle">толкование</text><text style="font-size: 28px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-132,159)rotate(0)" text-anchor="middle">мужчина</text><text style="font-size: 27px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(207,79)rotate(0)" text-anchor="middle">декабрь</text><text style="font-size: 27px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(299,15)rotate(0)" text-anchor="middle">таро</text><text style="font-size: 25px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-252,-112)rotate(0)" text-anchor="middle">карта</text><text style="font-size: 23px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-283,4)rotate(0)" text-anchor="middle">рождение</text><text style="font-size: 23px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(160,-144)rotate(0)" text-anchor="middle">стрижка</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-35,-80)rotate(0)" text-anchor="middle">луна</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(253,99)rotate(0)" text-anchor="middle">скорпион</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(261,-79)rotate(0)" text-anchor="middle">любовь</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-29,150)rotate(0)" text-anchor="middle">россия</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(30,149)rotate(0)" text-anchor="middle">дата</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(200,-65)rotate(0)" text-anchor="middle">рак</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(260,-100)rotate(0)" text-anchor="middle">рыба</text><text style="font-size: 21px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(265,-142)rotate(0)" text-anchor="middle">присниться</text><text style="font-size: 20px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(274,-122)rotate(0)" text-anchor="middle">близнец</text><text style="font-size: 20px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(119,-8)rotate(0)" text-anchor="middle">лев</text><text style="font-size: 20px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(128,-170)rotate(0)" text-anchor="middle">овен</text><text style="font-size: 19px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-246,21)rotate(0)" text-anchor="middle">дева</text><text style="font-size: 19px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(188,-169)rotate(0)" text-anchor="middle">козерог</text><text style="font-size: 19px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(259,120)rotate(0)" text-anchor="middle">девочка</text><text style="font-size: 19px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-262,46)rotate(0)" text-anchor="middle">стрелец</text><text style="font-size: 19px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-240,142)rotate(0)" text-anchor="middle">водолей</text><text style="font-size: 18px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-266,-19)rotate(0)" text-anchor="middle">весы</text><text style="font-size: 18px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(300,66)rotate(0)" text-anchor="middle">новый</text><text style="font-size: 18px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-273,-41)rotate(0)" text-anchor="middle">телец</text><text style="font-size: 17px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-291,-71)rotate(0)" text-anchor="middle">мальчик</text><text style="font-size: 17px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(263,-63)rotate(0)" text-anchor="middle">означать</text><text style="font-size: 16px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-7,-176)rotate(0)" text-anchor="middle">волос</text><text style="font-size: 16px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(128,144)rotate(0)" text-anchor="middle">предсказание</text><text style="font-size: 16px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-16,165)rotate(0)" text-anchor="middle">видеть</text><text style="font-size: 16px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(91,161)rotate(0)" text-anchor="middle">неделя</text><text style="font-size: 16px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-91,-177)rotate(0)" text-anchor="middle">характеристика</text><text style="font-size: 15px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-39,-61)rotate(0)" text-anchor="middle">быть</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-276,60)rotate(0)" text-anchor="middle">отношение</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(254,-168)rotate(0)" text-anchor="middle">ребенок</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(17,-6)rotate(0)" text-anchor="middle">рука</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(220,146)rotate(0)" text-anchor="middle">любовный</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(217,24)rotate(0)" text-anchor="middle">животное</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(170,99)rotate(0)" text-anchor="middle">ванга</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(186,-17)rotate(0)" text-anchor="middle">книга</text><text style="font-size: 14px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-290,24)rotate(0)" text-anchor="middle">фаза</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(151,159)rotate(0)" text-anchor="middle">женский</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-240,159)rotate(0)" text-anchor="middle">благоприятный</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(317,44)rotate(0)" text-anchor="middle">прогноз</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(315,-105)rotate(0)" text-anchor="middle">миллер</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-291,-59)rotate(0)" text-anchor="middle">человек</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(302,80)rotate(0)" text-anchor="middle">экстрасенс</text><text style="font-size: 13px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-313,-87)rotate(0)" text-anchor="middle">месяц</text><text style="font-size: 12px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(299,-8)rotate(0)" text-anchor="middle">собака</text><text style="font-size: 12px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-203,-178)rotate(0)" text-anchor="middle">судьба</text><text style="font-size: 12px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-314,111)rotate(0)" text-anchor="middle">будущее</text><text style="font-size: 12px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(136,174)rotate(0)" text-anchor="middle">фамилия</text><text style="font-size: 12px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-279,-100)rotate(0)" text-anchor="middle">камень</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(35,162)rotate(0)" text-anchor="middle">коза</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(310,-167)rotate(0)" text-anchor="middle">пасьянс</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-306,139)rotate(0)" text-anchor="middle">перемена</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-315,-22)rotate(0)" text-anchor="middle">мужской</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-227,172)rotate(0)" text-anchor="middle">восточный</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(214,158)rotate(0)" text-anchor="middle">нумерология</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-113,169)rotate(0)" text-anchor="middle">оракул</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-316,71)rotate(0)" text-anchor="middle">гадать</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-183,68)rotate(0)" text-anchor="middle">змея</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-68,172)rotate(0)" text-anchor="middle">девушка</text><text style="font-size: 11px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(289,131)rotate(0)" text-anchor="middle">именины</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(200,174)rotate(0)" text-anchor="middle">василиса</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(141,-104)rotate(0)" text-anchor="middle">парень</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(38,175)rotate(0)" text-anchor="middle">происхождение</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(72,-106)rotate(0)" text-anchor="middle">число</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(70,-124)rotate(0)" text-anchor="middle">битва</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-149,181)rotate(0)" text-anchor="middle">толкователь</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(153,-19)rotate(0)" text-anchor="middle">дом</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(-291,127)rotate(0)" text-anchor="middle">володина</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(-260,-134)rotate(0)" text-anchor="middle">примета</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(308,30)rotate(0)" text-anchor="middle">свадьба</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(280,151)rotate(0)" text-anchor="middle">украина</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(249, 106, 33);" transform="translate(270,26)rotate(0)" text-anchor="middle">линия</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(251, 134, 30);" transform="translate(90,-180)rotate(0)" text-anchor="middle">фото</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(255, 162, 94);" transform="translate(-314,-33)rotate(0)" text-anchor="middle">жизнь</text><text style="font-size: 10px; opacity: 1; font-family: impact; fill: rgb(252, 198, 149);" transform="translate(-307,-117)rotate(0)" text-anchor="middle">деньги</text></g></svg>
-	</div>
+<div class="content">
+    <svg>
+        <g transform="translate(340,200)">
+            <text style="font-size: 90px; fill: rgb(249, 106, 33);"
+                  transform="translate(-47,57)rotate(0)" text-anchor="middle">гороскоп
+            </text>
+            <text style="font-size: 69px; fill: rgb(251, 134, 30);"
+                  transform="translate(49,-18)rotate(0)" text-anchor="middle">год
+            </text>
+            <text style="font-size: 68px; fill: rgb(255, 162, 94);"
+                  transform="translate(-133,-14)rotate(0)" text-anchor="middle">сонник
+            </text>
+            <text style="font-size: 55px; fill: rgb(252, 198, 149);"
+                  transform="translate(-77,101)rotate(0)" text-anchor="middle">имя
+            </text>
+            <text style="font-size: 53px; fill: rgb(249, 106, 33);"
+                  transform="translate(-156,-69)rotate(0)" text-anchor="middle">гадание
+            </text>
+            <text style="font-size: 51px; fill: rgb(251, 134, 30);"
+                  transform="translate(71,-67)rotate(0)" text-anchor="middle">онлайн
+            </text>
+            <text style="font-size: 51px; fill: rgb(255, 162, 94);"
+                  transform="translate(9,-104)rotate(0)" text-anchor="middle">сон
+            </text>
+            <text style="font-size: 49px; fill: rgb(252, 198, 149);"
+                  transform="translate(34,-141)rotate(0)" text-anchor="middle">ноябрь
+            </text>
+            <text style="font-size: 46px; fill: rgb(249, 106, 33);"
+                  transform="translate(67,93)rotate(0)" text-anchor="middle">сегодня
+            </text>
+            <text style="font-size: 44px; fill: rgb(251, 134, 30);"
+                  transform="translate(-216,100)rotate(0)" text-anchor="middle">сниться
+            </text>
+            <text style="font-size: 44px; fill: rgb(255, 162, 94);"
+                  transform="translate(209,-30)rotate(0)" text-anchor="middle">календарь
+            </text>
+            <text style="font-size: 41px; fill: rgb(252, 198, 149);"
+                  transform="translate(15,126)rotate(0)" text-anchor="middle">знак
+            </text>
+            <text style="font-size: 39px; fill: rgb(249, 106, 33);"
+                  transform="translate(-102,133)rotate(0)" text-anchor="middle">зодиак
+            </text>
+            <text style="font-size: 38px; fill: rgb(251, 134, 30);"
+                  transform="translate(-125,-111)rotate(0)" text-anchor="middle">бесплатно
+            </text>
+            <text style="font-size: 38px; fill: rgb(255, 162, 94);"
+                  transform="translate(-185,-146)rotate(0)" text-anchor="middle">совместимость
+            </text>
+            <text style="font-size: 37px; fill: rgb(252, 198, 149);"
+                  transform="translate(205,12)rotate(0)" text-anchor="middle">лунный
+            </text>
+            <text style="font-size: 36px; fill: rgb(249, 106, 33);"
+                  transform="translate(144,127)rotate(0)" text-anchor="middle">значение
+            </text>
+            <text style="font-size: 31px; fill: rgb(251, 134, 30);"
+                  transform="translate(154,-115)rotate(0)" text-anchor="middle">женщина
+            </text>
+            <text style="font-size: 29px; fill: rgb(255, 162, 94);"
+                  transform="translate(190,-83)rotate(0)" text-anchor="middle">день
+            </text>
+            <text style="font-size: 29px; fill: rgb(252, 198, 149);"
+                  transform="translate(-217,123)rotate(0)" text-anchor="middle">завтра
+            </text>
+            <text style="font-size: 29px; fill: rgb(249, 106, 33);"
+                  transform="translate(211,49)rotate(0)" text-anchor="middle">толкование
+            </text>
+            <text style="font-size: 28px; fill: rgb(251, 134, 30);"
+                  transform="translate(-132,159)rotate(0)" text-anchor="middle">мужчина
+            </text>
+            <text style="font-size: 27px; fill: rgb(255, 162, 94);"
+                  transform="translate(207,79)rotate(0)" text-anchor="middle">декабрь
+            </text>
+            <text style="font-size: 27px; fill: rgb(252, 198, 149);"
+                  transform="translate(299,15)rotate(0)" text-anchor="middle">таро
+            </text>
+            <text style="font-size: 25px; fill: rgb(249, 106, 33);"
+                  transform="translate(-252,-112)rotate(0)" text-anchor="middle">карта
+            </text>
+            <text style="font-size: 23px; fill: rgb(251, 134, 30);"
+                  transform="translate(-283,4)rotate(0)" text-anchor="middle">рождение
+            </text>
+            <text style="font-size: 23px; fill: rgb(255, 162, 94);"
+                  transform="translate(160,-144)rotate(0)" text-anchor="middle">стрижка
+            </text>
+            <text style="font-size: 21px; fill: rgb(252, 198, 149);"
+                  transform="translate(-35,-80)rotate(0)" text-anchor="middle">луна
+            </text>
+            <text style="font-size: 21px; fill: rgb(249, 106, 33);"
+                  transform="translate(253,99)rotate(0)" text-anchor="middle">скорпион
+            </text>
+            <text style="font-size: 21px; fill: rgb(251, 134, 30);"
+                  transform="translate(261,-79)rotate(0)" text-anchor="middle">любовь
+            </text>
+            <text style="font-size: 21px; fill: rgb(255, 162, 94);"
+                  transform="translate(-29,150)rotate(0)" text-anchor="middle">россия
+            </text>
+            <text style="font-size: 21px; fill: rgb(252, 198, 149);"
+                  transform="translate(30,149)rotate(0)" text-anchor="middle">дата
+            </text>
+            <text style="font-size: 21px; fill: rgb(249, 106, 33);"
+                  transform="translate(200,-65)rotate(0)" text-anchor="middle">рак
+            </text>
+            <text style="font-size: 21px; fill: rgb(251, 134, 30);"
+                  transform="translate(260,-100)rotate(0)" text-anchor="middle">рыба
+            </text>
+            <text style="font-size: 21px; fill: rgb(255, 162, 94);"
+                  transform="translate(265,-142)rotate(0)" text-anchor="middle">присниться
+            </text>
+            <text style="font-size: 20px; fill: rgb(252, 198, 149);"
+                  transform="translate(274,-122)rotate(0)" text-anchor="middle">близнец
+            </text>
+            <text style="font-size: 20px; fill: rgb(249, 106, 33);"
+                  transform="translate(119,-8)rotate(0)" text-anchor="middle">лев
+            </text>
+            <text style="font-size: 20px; fill: rgb(251, 134, 30);"
+                  transform="translate(128,-170)rotate(0)" text-anchor="middle">овен
+            </text>
+            <text style="font-size: 19px; fill: rgb(255, 162, 94);"
+                  transform="translate(-246,21)rotate(0)" text-anchor="middle">дева
+            </text>
+            <text style="font-size: 19px; fill: rgb(252, 198, 149);"
+                  transform="translate(188,-169)rotate(0)" text-anchor="middle">козерог
+            </text>
+            <text style="font-size: 19px; fill: rgb(249, 106, 33);"
+                  transform="translate(259,120)rotate(0)" text-anchor="middle">девочка
+            </text>
+            <text style="font-size: 19px; fill: rgb(251, 134, 30);"
+                  transform="translate(-262,46)rotate(0)" text-anchor="middle">стрелец
+            </text>
+            <text style="font-size: 19px; fill: rgb(255, 162, 94);"
+                  transform="translate(-240,142)rotate(0)" text-anchor="middle">водолей
+            </text>
+            <text style="font-size: 18px; fill: rgb(252, 198, 149);"
+                  transform="translate(-266,-19)rotate(0)" text-anchor="middle">весы
+            </text>
+            <text style="font-size: 18px; fill: rgb(249, 106, 33);"
+                  transform="translate(300,66)rotate(0)" text-anchor="middle">новый
+            </text>
+            <text style="font-size: 18px; fill: rgb(251, 134, 30);"
+                  transform="translate(-273,-41)rotate(0)" text-anchor="middle">телец
+            </text>
+            <text style="font-size: 17px; fill: rgb(255, 162, 94);"
+                  transform="translate(-291,-71)rotate(0)" text-anchor="middle">мальчик
+            </text>
+            <text style="font-size: 17px; fill: rgb(252, 198, 149);"
+                  transform="translate(263,-63)rotate(0)" text-anchor="middle">означать
+            </text>
+            <text style="font-size: 16px; fill: rgb(249, 106, 33);"
+                  transform="translate(-7,-176)rotate(0)" text-anchor="middle">волос
+            </text>
+            <text style="font-size: 16px; fill: rgb(251, 134, 30);"
+                  transform="translate(128,144)rotate(0)" text-anchor="middle">предсказание
+            </text>
+            <text style="font-size: 16px; fill: rgb(255, 162, 94);"
+                  transform="translate(-16,165)rotate(0)" text-anchor="middle">видеть
+            </text>
+            <text style="font-size: 16px; fill: rgb(252, 198, 149);"
+                  transform="translate(91,161)rotate(0)" text-anchor="middle">неделя
+            </text>
+            <text style="font-size: 16px; fill: rgb(249, 106, 33);"
+                  transform="translate(-91,-177)rotate(0)" text-anchor="middle">характеристика
+            </text>
+            <text style="font-size: 15px; fill: rgb(251, 134, 30);"
+                  transform="translate(-39,-61)rotate(0)" text-anchor="middle">быть
+            </text>
+            <text style="font-size: 14px; fill: rgb(255, 162, 94);"
+                  transform="translate(-276,60)rotate(0)" text-anchor="middle">отношение
+            </text>
+            <text style="font-size: 14px; fill: rgb(252, 198, 149);"
+                  transform="translate(254,-168)rotate(0)" text-anchor="middle">ребенок
+            </text>
+            <text style="font-size: 14px; fill: rgb(249, 106, 33);"
+                  transform="translate(17,-6)rotate(0)" text-anchor="middle">рука
+            </text>
+            <text style="font-size: 14px; fill: rgb(251, 134, 30);"
+                  transform="translate(220,146)rotate(0)" text-anchor="middle">любовный
+            </text>
+            <text style="font-size: 14px; fill: rgb(255, 162, 94);"
+                  transform="translate(217,24)rotate(0)" text-anchor="middle">животное
+            </text>
+            <text style="font-size: 14px; fill: rgb(252, 198, 149);"
+                  transform="translate(170,99)rotate(0)" text-anchor="middle">ванга
+            </text>
+            <text style="font-size: 14px; fill: rgb(249, 106, 33);"
+                  transform="translate(186,-17)rotate(0)" text-anchor="middle">книга
+            </text>
+            <text style="font-size: 14px; fill: rgb(251, 134, 30);"
+                  transform="translate(-290,24)rotate(0)" text-anchor="middle">фаза
+            </text>
+            <text style="font-size: 13px; fill: rgb(255, 162, 94);"
+                  transform="translate(151,159)rotate(0)" text-anchor="middle">женский
+            </text>
+            <text style="font-size: 13px; fill: rgb(252, 198, 149);"
+                  transform="translate(-240,159)rotate(0)" text-anchor="middle">благоприятный
+            </text>
+            <text style="font-size: 13px; fill: rgb(249, 106, 33);"
+                  transform="translate(317,44)rotate(0)" text-anchor="middle">прогноз
+            </text>
+            <text style="font-size: 13px; fill: rgb(251, 134, 30);"
+                  transform="translate(315,-105)rotate(0)" text-anchor="middle">миллер
+            </text>
+            <text style="font-size: 13px; fill: rgb(255, 162, 94);"
+                  transform="translate(-291,-59)rotate(0)" text-anchor="middle">человек
+            </text>
+            <text style="font-size: 13px; fill: rgb(252, 198, 149);"
+                  transform="translate(302,80)rotate(0)" text-anchor="middle">экстрасенс
+            </text>
+            <text style="font-size: 13px; fill: rgb(249, 106, 33);"
+                  transform="translate(-313,-87)rotate(0)" text-anchor="middle">месяц
+            </text>
+            <text style="font-size: 12px; fill: rgb(251, 134, 30);"
+                  transform="translate(299,-8)rotate(0)" text-anchor="middle">собака
+            </text>
+            <text style="font-size: 12px; fill: rgb(255, 162, 94);"
+                  transform="translate(-203,-178)rotate(0)" text-anchor="middle">судьба
+            </text>
+            <text style="font-size: 12px; fill: rgb(252, 198, 149);"
+                  transform="translate(-314,111)rotate(0)" text-anchor="middle">будущее
+            </text>
+            <text style="font-size: 12px; fill: rgb(249, 106, 33);"
+                  transform="translate(136,174)rotate(0)" text-anchor="middle">фамилия
+            </text>
+            <text style="font-size: 12px; fill: rgb(251, 134, 30);"
+                  transform="translate(-279,-100)rotate(0)" text-anchor="middle">камень
+            </text>
+            <text style="font-size: 11px; fill: rgb(255, 162, 94);"
+                  transform="translate(35,162)rotate(0)" text-anchor="middle">коза
+            </text>
+            <text style="font-size: 11px; fill: rgb(252, 198, 149);"
+                  transform="translate(310,-167)rotate(0)" text-anchor="middle">пасьянс
+            </text>
+            <text style="font-size: 11px; fill: rgb(249, 106, 33);"
+                  transform="translate(-306,139)rotate(0)" text-anchor="middle">перемена
+            </text>
+            <text style="font-size: 11px; fill: rgb(251, 134, 30);"
+                  transform="translate(-315,-22)rotate(0)" text-anchor="middle">мужской
+            </text>
+            <text style="font-size: 11px; fill: rgb(255, 162, 94);"
+                  transform="translate(-227,172)rotate(0)" text-anchor="middle">восточный
+            </text>
+            <text style="font-size: 11px; fill: rgb(252, 198, 149);"
+                  transform="translate(214,158)rotate(0)" text-anchor="middle">нумерология
+            </text>
+            <text style="font-size: 11px; fill: rgb(249, 106, 33);"
+                  transform="translate(-113,169)rotate(0)" text-anchor="middle">оракул
+            </text>
+            <text style="font-size: 11px; fill: rgb(251, 134, 30);"
+                  transform="translate(-316,71)rotate(0)" text-anchor="middle">гадать
+            </text>
+            <text style="font-size: 11px; fill: rgb(255, 162, 94);"
+                  transform="translate(-183,68)rotate(0)" text-anchor="middle">змея
+            </text>
+            <text style="font-size: 11px; fill: rgb(252, 198, 149);"
+                  transform="translate(-68,172)rotate(0)" text-anchor="middle">девушка
+            </text>
+            <text style="font-size: 11px; fill: rgb(249, 106, 33);"
+                  transform="translate(289,131)rotate(0)" text-anchor="middle">именины
+            </text>
+            <text style="font-size: 10px; fill: rgb(251, 134, 30);"
+                  transform="translate(200,174)rotate(0)" text-anchor="middle">василиса
+            </text>
+            <text style="font-size: 10px; fill: rgb(255, 162, 94);"
+                  transform="translate(141,-104)rotate(0)" text-anchor="middle">парень
+            </text>
+            <text style="font-size: 10px; fill: rgb(252, 198, 149);"
+                  transform="translate(38,175)rotate(0)" text-anchor="middle">происхождение
+            </text>
+            <text style="font-size: 10px; fill: rgb(249, 106, 33);"
+                  transform="translate(72,-106)rotate(0)" text-anchor="middle">число
+            </text>
+            <text style="font-size: 10px; fill: rgb(251, 134, 30);"
+                  transform="translate(70,-124)rotate(0)" text-anchor="middle">битва
+            </text>
+            <text style="font-size: 10px; fill: rgb(255, 162, 94);"
+                  transform="translate(-149,181)rotate(0)" text-anchor="middle">толкователь
+            </text>
+            <text style="font-size: 10px; fill: rgb(252, 198, 149);"
+                  transform="translate(153,-19)rotate(0)" text-anchor="middle">дом
+            </text>
+            <text style="font-size: 10px; fill: rgb(249, 106, 33);"
+                  transform="translate(-291,127)rotate(0)" text-anchor="middle">володина
+            </text>
+            <text style="font-size: 10px; fill: rgb(251, 134, 30);"
+                  transform="translate(-260,-134)rotate(0)" text-anchor="middle">примета
+            </text>
+            <text style="font-size: 10px; fill: rgb(255, 162, 94);"
+                  transform="translate(308,30)rotate(0)" text-anchor="middle">свадьба
+            </text>
+            <text style="font-size: 10px; fill: rgb(252, 198, 149);"
+                  transform="translate(280,151)rotate(0)" text-anchor="middle">украина
+            </text>
+            <text style="font-size: 10px; fill: rgb(249, 106, 33);"
+                  transform="translate(270,26)rotate(0)" text-anchor="middle">линия
+            </text>
+            <text style="font-size: 10px; fill: rgb(251, 134, 30);"
+                  transform="translate(90,-180)rotate(0)" text-anchor="middle">фото
+            </text>
+            <text style="font-size: 10px; fill: rgb(255, 162, 94);"
+                  transform="translate(-314,-33)rotate(0)" text-anchor="middle">жизнь
+            </text>
+            <text style="font-size: 10px; fill: rgb(252, 198, 149);"
+                  transform="translate(-307,-117)rotate(0)" text-anchor="middle">деньги
+            </text>
+        </g>
+    </svg>
+</div>
 </body>
 </html>

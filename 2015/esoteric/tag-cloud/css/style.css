@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 730px;
+    height: 400px;
+    font-family: "Textbook-regular", Arial, sans-serif;
+    font-size: 62.5%;
+}
+
+svg {
+    width: 720px;
+    height: 400px;
+}
